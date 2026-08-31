@@ -22,7 +22,7 @@ export function Reels() {
     <section id="reels" className="relative border-t border-white/8 py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
-          label="Founder reels"
+          label="11 — Founder reels"
           title={
             <>
               Ideas, insights &amp; <span className="text-brand">behind the build.</span>

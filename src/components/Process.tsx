@@ -29,13 +29,13 @@ export function Process() {
     <section id="process" className="relative border-t border-white/8 py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
-          label="Process"
+          label="04 — How we build"
           title={
             <>
               From idea to <span className="text-brand">launch.</span>
             </>
           }
-          sub="A clear process from first conversation to ongoing optimization."
+          sub="Six stages, run like missions. You always know which stage you're in and what happens next."
         />
 
         <div className="mt-16 grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">

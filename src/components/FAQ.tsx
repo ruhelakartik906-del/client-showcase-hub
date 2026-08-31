@@ -11,7 +11,7 @@ export function FAQ() {
     <section className="relative border-t border-white/8 py-24 lg:py-32">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20 lg:px-8">
         <SectionHeading
-          label="FAQ"
+          label="13 — FAQ"
           title={
             <>
               Questions, <span className="text-brand">answered.</span>

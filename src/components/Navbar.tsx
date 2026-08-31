@@ -76,8 +76,14 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-3">
+          <span className="hidden items-center gap-2 rounded-full border border-brand/25 bg-brand/5 px-3 py-1.5 font-mono text-[10px] uppercase tracking-[0.18em] text-brand xl:inline-flex">
+            <span className="relative flex h-1.5 w-1.5">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand opacity-70" />
+              <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-brand" />
+            </span>
+            {site.availability}
+          </span>
           <a
-
             href="#contact"
             className="hidden items-center gap-1.5 rounded-full bg-brand px-4 py-2 text-sm font-semibold text-brand-foreground transition-transform duration-300 hover:scale-[1.03] sm:inline-flex"
           >

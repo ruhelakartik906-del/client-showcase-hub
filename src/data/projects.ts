@@ -9,11 +9,13 @@ import caseInfinity from "@/assets/case-infinity.png.asset.json";
 
 export const projectCategories = [
   "ALL",
-  "E-COMMERCE",
   "WEBSITES",
   "SOFTWARE",
+  "AUTOMATION",
   "AI",
-  "BRAND",
+  "CRM",
+  "WHATSAPP",
+  "MARKETING",
 ] as const;
 
 export type ProjectCategory = (typeof projectCategories)[number];
@@ -22,207 +24,101 @@ export type Project = {
   id: string;
   name: string;
   category: Exclude<ProjectCategory, "ALL">;
-  categoryLabel: string;
-  industry: string;
   image: string;
-  liveUrl?: string;
+  imageFit?: "cover" | "contain";
   description: string;
   services: string[];
   tech: string[];
-  challenge: string;
-  approach: string;
-  built: string[];
-  features: string[];
-  objective: string;
-  result: string;
+  outcome?: string;
 };
 
 export const projects: Project[] = [
   {
     id: "vastra",
     name: "Vastra",
-    category: "E-COMMERCE",
-    categoryLabel: "E-commerce / Website",
-    industry: "Home textiles",
+    category: "WEBSITES",
     image: caseVastra.url,
     description:
-      "Premium home textile e-commerce experience focused on collection discovery, trust and a clean path to purchase.",
-    services: ["E-commerce build", "UX design", "Performance"],
+      "Premium bedding e-commerce storefront — collection browsing, trust bar and a clean path to checkout.",
+    services: ["E-commerce build", "UX", "Performance"],
     tech: ["React", "Payments", "GA4"],
-    challenge:
-      "A wide bedding catalogue was hard to browse, and the storefront did not communicate the quality of the product range.",
-    approach:
-      "We restructured the catalogue around collections and use cases, then rebuilt the storefront with a calmer visual system and a shorter route to checkout.",
-    built: [
-      "Collection-led storefront",
-      "Product and category templates",
-      "Trust and delivery messaging",
-      "Checkout flow refinement",
-    ],
-    features: ["Collection browsing", "Responsive product grid", "Trust bar", "Analytics tracking"],
-    objective: "Make the range easy to explore and the purchase decision easy to make.",
-    result: "A faster catalogue experience with a clear, uninterrupted path to checkout.",
+    outcome: "Faster catalogue browsing and a cleaner path to checkout.",
   },
   {
     id: "street9",
     name: "Street9",
-    category: "E-COMMERCE",
-    categoryLabel: "Fashion E-commerce",
-    industry: "Fashion retail",
+    category: "WEBSITES",
     image: caseStreet9.url,
     description:
-      "Fashion storefront designed around quick product discovery, category browsing and direct customer support.",
-    services: ["Website", "UX design", "Conversion"],
-    tech: ["React", "Responsive UI", "WhatsApp", "Analytics"],
-    challenge:
-      "Shoppers had to work too hard to move between categories, and support questions were slowing down purchases.",
-    approach:
-      "We designed quick-buy product cards, tightened category navigation and put customer support one tap away on every page.",
-    built: [
-      "Category-first navigation",
-      "Quick-buy product cards",
-      "WhatsApp support entry points",
-      "Mobile-first layout system",
-    ],
-    features: ["Fast product discovery", "Sticky support access", "Optimised mobile browsing"],
-    objective: "Reduce friction between discovery and purchase.",
-    result: "A storefront that keeps shoppers moving instead of stalling on navigation.",
+      "Fashion e-commerce with quick-buy product cards, category discovery and WhatsApp support built in.",
+    services: ["Website", "UX", "Conversion"],
+    tech: ["React", "Responsive UI", "Analytics"],
+    outcome: "A polished storefront that keeps shoppers moving to checkout.",
   },
   {
     id: "do-desk",
     name: "Do Desk",
     category: "SOFTWARE",
-    categoryLabel: "Commerce Platform",
-    industry: "Consumer accessories",
     image: caseDodesk.url,
     description:
-      "Large-catalogue commerce experience with structured categories, merchandising blocks and offer management.",
-    services: ["Product design", "Web application", "Deployment"],
+      "Large-catalogue commerce platform with category systems, merchandising blocks and offer management.",
+    services: ["Product design", "Web app", "Deployment"],
     tech: ["React", "Node", "PostgreSQL"],
-    challenge:
-      "A large product catalogue and frequent campaigns were being coordinated manually across disconnected tools.",
-    approach:
-      "We designed a structured category system and merchandising blocks the team can rearrange, then built it as a single operating surface.",
-    built: [
-      "Category and taxonomy system",
-      "Merchandising blocks",
-      "Offer and campaign management",
-      "Admin workflows",
-    ],
-    features: ["Structured catalogue", "Configurable homepage modules", "Offer scheduling"],
-    objective: "Give the team one place to run the catalogue and its campaigns.",
-    result: "Manual coordination replaced by a single operating surface.",
+    outcome: "Manual coordination replaced by a single operating surface.",
   },
   {
     id: "kirtilals",
     name: "Kirtilals",
-    category: "BRAND",
-    categoryLabel: "Jewellery / Digital Experience",
-    industry: "Jewellery retail",
+    category: "MARKETING",
     image: caseKirtilals.url,
-    liveUrl: "https://www.kirtilals.com",
     description:
-      "Heritage jewellery brand experience combining premium visual storytelling, campaigns and digital shopping.",
+      "Heritage jewellery brand experience — festive campaigns, virtual try-on entry points and trust signals.",
     services: ["Campaign strategy", "Content", "Growth"],
     tech: ["Meta Ads", "Content ops", "Analytics"],
-    challenge:
-      "A heritage brand needed a digital presence that felt as considered as the product, across campaigns and shopping alike.",
-    approach:
-      "We built a campaign and content system around the brand's visual language, with clear entry points into the shopping experience.",
-    built: [
-      "Festive campaign system",
-      "Virtual try-on entry points",
-      "Content and creative pipeline",
-      "Performance tracking",
-    ],
-    features: ["Campaign landing experiences", "Editorial storytelling", "Trust signals"],
-    objective: "Keep the brand premium across every digital touchpoint.",
-    result: "A consistently premium presence across campaigns and shopping journeys.",
+    outcome: "A consistently premium presence across digital touchpoints.",
   },
   {
     id: "lal",
     name: "LAL Sweets",
     category: "AI",
-    categoryLabel: "E-commerce / AI",
-    industry: "Food & confectionery",
     image: caseLal.url,
     description:
-      "Sweets e-commerce experience with AI-assisted enquiry handling and customer routing.",
+      "Sweets e-commerce with an AI-assisted enquiry flow that qualifies orders and routes them to the team.",
     services: ["AI agent", "Website", "Integrations"],
     tech: ["LLM APIs", "WhatsApp API", "Commerce"],
-    challenge:
-      "Bulk and festive enquiries arrived with too little context, and the team spent the first exchange just collecting basics.",
-    approach:
-      "We added an AI-assisted enquiry flow that collects requirements conversationally and routes the enquiry to the right person.",
-    built: [
-      "AI enquiry assistant",
-      "Requirement capture flow",
-      "WhatsApp routing",
-      "Storefront integration",
-    ],
-    features: ["Conversational qualification", "Automatic routing", "Human handoff"],
-    objective: "Let the team start every conversation already informed.",
-    result: "Qualified conversations reach the team already contextualised.",
+    outcome: "Qualified conversations reach the team already contextualised.",
   },
   {
     id: "hocco",
     name: "Hocco Ice Cream",
-    category: "BRAND",
-    categoryLabel: "Brand Experience / Marketing",
-    industry: "FMCG",
+    category: "MARKETING",
     image: caseHocco.url,
-    liveUrl: "https://www.hocco.in",
     description:
-      "Playful digital brand experience built around storytelling, campaigns and customer engagement.",
+      "Playful brand-led site and campaign system for a fast-moving consumer ice cream brand.",
     services: ["Content", "UGC", "Campaigns"],
     tech: ["Meta Ads", "Content ops"],
-    challenge:
-      "A fast-moving consumer brand needed its digital presence to carry the same personality as its packaging and stores.",
-    approach:
-      "We built a brand-led site experience and a repeatable campaign system so web and social tell one story.",
-    built: ["Brand-led site sections", "Campaign templates", "UGC content system"],
-    features: ["Story-driven layout", "Campaign modules", "Social-first creative"],
-    objective: "Carry one brand voice across web and social.",
-    result: "Brand storytelling that stays consistent across every channel.",
+    outcome: "Brand storytelling that carries across web and social.",
   },
   {
     id: "xpert-awards",
     name: "Xpert Awards",
     category: "WEBSITES",
-    categoryLabel: "Website / Lead Generation",
-    industry: "Manufacturing",
     image: caseXpert.url,
     description:
-      "Trophy manufacturer website designed around product discovery, quote generation and WhatsApp-first enquiries.",
+      "Trophy manufacturer website built around quote generation, product range and WhatsApp-first enquiries.",
     services: ["Website", "Lead capture", "SEO"],
     tech: ["React", "WhatsApp API", "GA4"],
-    challenge:
-      "Enquiries arrived without product, quantity or timeline details, so every quote needed several rounds of messages.",
-    approach:
-      "We structured the product range for browsing and built a quote flow that captures the details before the conversation starts.",
-    built: ["Product range pages", "Quote request flow", "WhatsApp-first enquiry routing", "SEO foundation"],
-    features: ["Structured product discovery", "Quote capture", "One-tap WhatsApp"],
-    objective: "Turn raw enquiries into ready-to-quote requests.",
-    result: "Enquiries now arrive qualified through the quote and WhatsApp flows.",
+    outcome: "Enquiries now arrive qualified through quote and WhatsApp flows.",
   },
   {
     id: "infinity-boards",
     name: "Infinity Boards",
     category: "WEBSITES",
-    categoryLabel: "Manufacturing / Website",
-    industry: "Building materials",
     image: caseInfinity.url,
     description:
-      "Manufacturer website focused on product range, dealer trust and direct enquiry routing.",
+      "Manufacturer site for wood panels — product range, dealer trust proof and direct call/WhatsApp routing.",
     services: ["Website", "Brand integration", "Lead routing"],
     tech: ["React", "WhatsApp API", "Analytics"],
-    challenge:
-      "Dealers and buyers had different needs, but every visitor landed on the same undifferentiated contact path.",
-    approach:
-      "We presented the product range clearly, layered in dealer trust proof and routed each enquiry type to the right team.",
-    built: ["Product range presentation", "Dealer trust section", "Call and WhatsApp routing"],
-    features: ["Range browsing", "Trust proof", "Direct enquiry routing"],
-    objective: "Get each visitor to the right team in one step.",
-    result: "Dealers and buyers reach the right team in one tap.",
+    outcome: "Dealers and buyers reach the right team in one tap.",
   },
 ];

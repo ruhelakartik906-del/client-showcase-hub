@@ -1,11 +1,15 @@
 import { ArrowRight, ArrowDown } from "lucide-react";
+import founder from "@/assets/founder.jpg";
 import { site } from "@/data/site";
-import { projects } from "@/data/projects";
 import { MagneticButton } from "./ui-kit/Magnetic";
 import { Reveal } from "./ui-kit/Reveal";
 import { SectionLabel } from "./ui-kit/SectionHeading";
 
-const capabilities = ["Websites", "Software", "CRM", "Automation", "WhatsApp", "AI"];
+const founderStats = [
+  { k: "Started freelancing", v: "2023" },
+  { k: "Current", v: "Founder, UnknownHat" },
+  { k: "Also building", v: "Hatflow" },
+];
 
 export function Hero() {
   return (
@@ -13,25 +17,28 @@ export function Hero() {
       <div className="pointer-events-none absolute inset-0 grid-bg opacity-[0.5] [mask-image:radial-gradient(70%_60%_at_50%_20%,black,transparent)]" />
       <div className="pointer-events-none absolute -top-40 left-1/2 h-[520px] w-[820px] -translate-x-1/2 rounded-full bg-brand/12 blur-[130px]" />
 
-      <div className="relative mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-[1.02fr_0.98fr] lg:gap-16 lg:px-8">
+      <div className="relative mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-8">
         <div>
           <Reveal>
             <div className="flex flex-wrap items-center gap-4">
-              <SectionLabel>Digital Technology &amp; Automation Studio</SectionLabel>
+              <SectionLabel>{site.tagline}</SectionLabel>
             </div>
           </Reveal>
 
           <Reveal delay={80}>
-            <h1 className="mt-6 text-balance text-[2.5rem] font-extrabold leading-[1.0] sm:text-6xl xl:text-[4.2rem]">
-              Digital systems for businesses ready to{" "}
-              <span className="text-brand text-glow">move faster.</span>
+            <h1 className="mt-6 text-balance text-[2.6rem] font-extrabold leading-[0.98] sm:text-6xl xl:text-7xl">
+              We <span className="text-brand text-glow">build</span>,{" "}
+              <span className="text-brand text-glow">automate</span> &amp;{" "}
+              <span className="text-brand text-glow">grow</span>
+              <br className="hidden sm:block" /> digital businesses.
             </h1>
           </Reveal>
 
           <Reveal delay={140}>
             <p className="mt-6 max-w-xl text-pretty text-sm leading-relaxed text-muted-foreground sm:text-base">
-              We design and build websites, software, AI, CRM, WhatsApp and automation
-              systems — connected around how your business actually works.
+              Websites, software, CRM, automation, AI systems, WhatsApp solutions,
+              growth and content — engineered around the way your business actually
+              works.
             </p>
           </Reveal>
 
@@ -46,83 +53,29 @@ export function Hero() {
             </div>
           </Reveal>
 
-          <Reveal delay={250}>
-            <p className="mt-7 inline-flex items-center gap-2.5 rounded-full border border-white/10 bg-white/[0.03] px-3.5 py-1.5">
-              <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full rounded-full bg-brand opacity-70 [animation:uh-pulse-node_2.4s_ease-in-out_infinite]" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-brand" />
-              </span>
-              <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
-                {site.availability}
-              </span>
-            </p>
-          </Reveal>
-
-          <Reveal delay={300}>
-            <ul className="mt-10 flex max-w-lg flex-wrap gap-x-5 gap-y-2 border-t border-white/8 pt-6">
-              {capabilities.map((c) => (
-                <li
-                  key={c}
-                  className="font-mono text-[11px] uppercase tracking-[0.16em] text-muted-foreground"
-                >
-                  {c}
-                </li>
+          <Reveal delay={260}>
+            <dl className="mt-12 grid max-w-lg grid-cols-2 gap-px overflow-hidden rounded-xl border border-white/10 bg-white/5 sm:grid-cols-3">
+              {founderStats.map((s) => (
+                <div key={s.k} className="bg-background/80 px-4 py-4">
+                  <dt className="font-mono text-[10px] uppercase tracking-[0.16em] text-muted-foreground">
+                    {s.k}
+                  </dt>
+                  <dd className="mt-1.5 text-sm font-semibold">{s.v}</dd>
+                </div>
               ))}
-            </ul>
+            </dl>
           </Reveal>
         </div>
 
         <Reveal delay={160} className="relative">
-          <WorkCollage />
+          <FounderVisual />
         </Reveal>
       </div>
     </section>
   );
 }
 
-function BrowserFrame({
-  src,
-  alt,
-  label,
-  className,
-  eager,
-}: {
-  src: string;
-  alt: string;
-  label: string;
-  className?: string;
-  eager?: boolean;
-}) {
-  return (
-    <figure
-      className={`group overflow-hidden rounded-xl border border-white/12 bg-card shadow-[0_30px_80px_-40px_rgba(0,0,0,0.9)] transition-transform duration-700 ease-out hover:-translate-y-1 ${className ?? ""}`}
-    >
-      <div className="flex items-center gap-1.5 border-b border-white/8 bg-white/[0.04] px-3 py-2">
-        <span className="h-1.5 w-1.5 rounded-full bg-white/25" />
-        <span className="h-1.5 w-1.5 rounded-full bg-white/25" />
-        <span className="h-1.5 w-1.5 rounded-full bg-white/25" />
-        <span className="ml-2 truncate font-mono text-[9px] uppercase tracking-[0.16em] text-muted-foreground">
-          {label}
-        </span>
-      </div>
-      <img
-        src={src}
-        alt={alt}
-        loading={eager ? "eager" : "lazy"}
-        decoding="async"
-        className="aspect-16/11 w-full object-cover object-top transition-transform duration-[1200ms] ease-out group-hover:scale-[1.04]"
-      />
-    </figure>
-  );
-}
-
-function WorkCollage() {
-  const [a, b, c] = [
-    projects.find((p) => p.id === "vastra")!,
-    projects.find((p) => p.id === "kirtilals")!,
-    projects.find((p) => p.id === "street9")!,
-  ];
-
+function FounderVisual() {
   return (
     <div className="relative mx-auto max-w-md lg:max-w-none">
       <svg
@@ -139,35 +92,32 @@ function WorkCollage() {
         <path d="M30 380 L110 380 L110 320" stroke="currentColor" strokeWidth="1" opacity="0.4" className="flow-dash" />
       </svg>
 
-      <div className="relative grid grid-cols-5 gap-4">
-        <BrowserFrame
-          eager
-          src={a.image}
-          alt={`${a.name} — ${a.categoryLabel} built by UnknownHat`}
-          label={a.name}
-          className="col-span-5"
+      <div className="relative overflow-hidden rounded-2xl border border-white/12 bg-card">
+        <img
+          src={founder}
+          alt="Nitin Raghav, Founder and Technology Lead at UnknownHat Agency"
+          className="aspect-4/5 w-full object-cover grayscale-[0.25] transition-all duration-700 hover:grayscale-0"
+          loading="eager"
         />
-        <BrowserFrame
-          src={b.image}
-          alt={`${b.name} — ${b.categoryLabel} built by UnknownHat`}
-          label={b.name}
-          className="col-span-3"
-        />
-        <BrowserFrame
-          src={c.image}
-          alt={`${c.name} — ${c.categoryLabel} built by UnknownHat`}
-          label={c.name}
-          className="col-span-2"
-        />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background via-background/25 to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 p-5">
+          <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-brand">
+            {site.founder.role}
+          </p>
+          <h2 className="mt-1.5 text-2xl font-bold">{site.founder.name}</h2>
+          <p className="mt-2 max-w-sm text-xs leading-relaxed text-muted-foreground sm:text-sm">
+            “{site.founder.quote}”
+          </p>
+        </div>
       </div>
 
-      <div className="glass float-slow absolute -left-6 -bottom-6 hidden rounded-xl px-3.5 py-2.5 sm:block">
+      <div className="glass float-slow absolute -left-5 top-10 hidden rounded-xl px-3.5 py-2.5 sm:block">
         <p className="font-mono text-[10px] text-brand">workflow.run()</p>
         <p className="mt-0.5 font-mono text-[10px] text-muted-foreground">lead → ai → crm</p>
       </div>
-      <div className="glass float-slow absolute -right-6 -top-6 hidden rounded-xl px-3.5 py-2.5 [animation-delay:1.4s] sm:block">
-        <p className="font-mono text-[10px] text-muted-foreground">systems shipped</p>
-        <p className="mt-0.5 font-mono text-[11px] font-semibold text-brand">web · crm · ai</p>
+      <div className="glass float-slow absolute -right-4 bottom-24 hidden rounded-xl px-3.5 py-2.5 [animation-delay:1.4s] sm:block">
+        <p className="font-mono text-[10px] text-muted-foreground">uptime</p>
+        <p className="mt-0.5 font-mono text-[11px] font-semibold text-brand">99.9%</p>
       </div>
     </div>
   );
