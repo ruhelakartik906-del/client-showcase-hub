@@ -22,7 +22,7 @@ export const services: Service[] = [
     id: "web",
     index: "01",
     title: "Website Development",
-    short: "Fast, conversion-focused websites engineered around your funnel.",
+    short: "We build fast, responsive and conversion-focused websites designed around your business and customers.",
     mascot: "browser",
     build: [
       "Business and brand websites",
@@ -42,7 +42,7 @@ export const services: Service[] = [
     id: "software",
     index: "02",
     title: "Software Development",
-    short: "Custom platforms and internal tools that fit how you actually operate.",
+    short: "We build custom web applications, dashboards and internal tools based on your specific requirements.",
     mascot: "code",
     build: [
       "Web applications",
@@ -62,7 +62,7 @@ export const services: Service[] = [
     id: "crm",
     index: "03",
     title: "CRM Development",
-    short: "Pipelines, follow-ups and reporting built for your sales reality.",
+    short: "We build CRM systems that help your team manage leads, customers, follow-ups and sales from one place.",
     mascot: "dashboard",
     build: [
       "Lead management systems",
@@ -82,7 +82,7 @@ export const services: Service[] = [
     id: "automation",
     index: "04",
     title: "Automation & n8n",
-    short: "Connected workflows that remove repetitive human work.",
+    short: "We connect your apps, APIs and business processes so repetitive work happens automatically.",
     mascot: "nodes",
     build: [
       "n8n workflow systems",
@@ -102,7 +102,7 @@ export const services: Service[] = [
     id: "whatsapp",
     index: "05",
     title: "WhatsApp API & Chatbots",
-    short: "Official WhatsApp systems that sell, support and follow up.",
+    short: "We build WhatsApp systems for customer enquiries, lead qualification, notifications, support and follow-ups.",
     mascot: "chat",
     build: [
       "WhatsApp Cloud API setup",
@@ -122,7 +122,7 @@ export const services: Service[] = [
     id: "ai",
     index: "06",
     title: "AI Agents & Business Systems",
-    short: "Agents that qualify, answer, summarise and act inside your stack.",
+    short: "We build AI agents that can answer questions, qualify leads, handle conversations, process information and work with your existing business systems.",
     mascot: "agent",
     build: [
       "AI sales & support agents",
@@ -142,7 +142,7 @@ export const services: Service[] = [
     id: "growth",
     index: "07",
     title: "Growth Marketing & Content",
-    short: "Demand engineered on top of the systems we build.",
+    short: "We help businesses improve their online presence through SEO, content, social media and performance-focused digital growth.",
     mascot: "growth",
     build: ["Meta & Google Ads", "SEO", "Content systems", "UGC and short-form"],
     useCases: [

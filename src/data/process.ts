@@ -2,37 +2,37 @@ export const processStages = [
   {
     id: "01",
     title: "Discover",
-    text: "Understand business, audience, goals and requirements.",
+    text: "We understand your business, requirements, customers and goals.",
     hud: "Mission briefing",
   },
   {
     id: "02",
     title: "Strategy",
-    text: "Define architecture, UX, technical approach and scope.",
+    text: "We decide what needs to be built and how the system should work.",
     hud: "Loadout selected",
   },
   {
     id: "03",
     title: "Design",
-    text: "Create the interface, flows and visual direction.",
+    text: "We create the user experience and visual interface.",
     hud: "Blueprint locked",
   },
   {
     id: "04",
     title: "Build",
-    text: "Develop the website, software, automation or AI system.",
+    text: "We develop the website, software, automation or AI system.",
     hud: "Systems online",
   },
   {
     id: "05",
     title: "Test & Launch",
-    text: "QA, performance, deployment and launch.",
+    text: "We test everything, fix issues and launch the final system.",
     hud: "Final checks",
   },
   {
     id: "06",
     title: "Support & Scale",
-    text: "Maintenance, optimization, automation and growth.",
+    text: "We provide ongoing improvements, maintenance and new features when required.",
     hud: "Mission continues",
   },
 ];
@@ -41,12 +41,12 @@ export const journey = [
   {
     year: "2023",
     title: "Started freelancing",
-    text: "Solving individual client problems, one build at a time.",
+    text: "Building websites and solving real problems for businesses, one client at a time.",
   },
   {
     year: "2023",
     title: "Web Development",
-    text: "Websites and landing systems built for conversion, not decoration.",
+    text: "Websites and landing pages built to load fast and convert visitors into enquiries.",
   },
   {
     year: "2024",
@@ -56,12 +56,12 @@ export const journey = [
   {
     year: "2024",
     title: "AI Systems",
-    text: "Agents and assistants connected to real business data.",
+    text: "AI agents and assistants connected to real business data.",
   },
   {
     year: "2025",
     title: "Business Solutions",
-    text: "CRM, WhatsApp and software platforms as connected systems.",
+    text: "CRM, WhatsApp and software platforms working together as one system.",
   },
   {
     year: "Now",
