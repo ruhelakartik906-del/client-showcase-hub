@@ -66,6 +66,8 @@ function Home() {
         <FinalCTA />
       </main>
       <Footer />
+      <WhatsAppFloat />
     </div>
   );
+
 }
