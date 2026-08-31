@@ -150,3 +150,22 @@
     color: var(--color-foreground);
   }
 }
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+@utility marquee-track {
+  animation: uh-marquee 28s linear infinite;
+}
+
+@keyframes uh-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
