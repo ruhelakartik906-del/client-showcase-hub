@@ -14,6 +14,7 @@ import { cn } from "@/lib/utils";
 function projectImageClass(project: Project, modal = false) {
   return cn(
     modal ? "aspect-16/9 w-full" : "h-full w-full",
+    "object-top",
     project.imageFit === "contain"
       ? "bg-white object-contain p-8 sm:p-12"
       : "object-cover",

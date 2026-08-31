@@ -34,37 +34,15 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "bedsheets-india",
-    name: "Bedsheets India",
+    id: "vastra",
+    name: "Vastra",
     category: "WEBSITES",
     image: caseVastra.url,
     description:
-      "E-commerce storefront rebuilt around speed, product discovery and checkout clarity.",
+      "Premium bedding e-commerce storefront — collection browsing, trust bar and a clean path to checkout.",
     services: ["E-commerce build", "UX", "Performance"],
-    tech: ["Shopify", "Liquid", "GA4"],
+    tech: ["React", "Payments", "GA4"],
     outcome: "Faster catalogue browsing and a cleaner path to checkout.",
-  },
-  {
-    id: "do-desk",
-    name: "Do Desk",
-    category: "SOFTWARE",
-    image: caseDodesk.url,
-    description:
-      "Custom workspace platform with role-based access and operational dashboards.",
-    services: ["Product design", "Web app", "Deployment"],
-    tech: ["React", "Node", "PostgreSQL"],
-    outcome: "Manual coordination replaced by a single operating surface.",
-  },
-  {
-    id: "stoa-crm",
-    name: "Stoa CRM",
-    category: "CRM",
-    image: caseInfinity.url,
-    description:
-      "Lead pipeline with automated follow-ups, ownership rules and reporting.",
-    services: ["CRM build", "Automation", "Reporting"],
-    tech: ["Custom CRM", "n8n", "APIs"],
-    outcome: "Every lead tracked from first touch to closure.",
   },
   {
     id: "street9",
@@ -72,10 +50,21 @@ export const projects: Project[] = [
     category: "WEBSITES",
     image: caseStreet9.url,
     description:
-      "A focused digital presence designed to make the brand clear, credible and easy to discover.",
-    services: ["Website", "UX", "Brand integration"],
+      "Fashion e-commerce with quick-buy product cards, category discovery and WhatsApp support built in.",
+    services: ["Website", "UX", "Conversion"],
     tech: ["React", "Responsive UI", "Analytics"],
-    outcome: "A polished digital destination aligned with the brand identity.",
+    outcome: "A polished storefront that keeps shoppers moving to checkout.",
+  },
+  {
+    id: "do-desk",
+    name: "Do Desk",
+    category: "SOFTWARE",
+    image: caseDodesk.url,
+    description:
+      "Large-catalogue commerce platform with category systems, merchandising blocks and offer management.",
+    services: ["Product design", "Web app", "Deployment"],
+    tech: ["React", "Node", "PostgreSQL"],
+    outcome: "Manual coordination replaced by a single operating surface.",
   },
   {
     id: "kirtilals",
@@ -83,41 +72,32 @@ export const projects: Project[] = [
     category: "MARKETING",
     image: caseKirtilals.url,
     description:
-      "Premium digital campaign support built around a heritage jewellery brand and its audience.",
+      "Heritage jewellery brand experience — festive campaigns, virtual try-on entry points and trust signals.",
     services: ["Campaign strategy", "Content", "Growth"],
     tech: ["Meta Ads", "Content ops", "Analytics"],
-    outcome: "A more consistent premium presence across digital touchpoints.",
+    outcome: "A consistently premium presence across digital touchpoints.",
   },
   {
     id: "lal",
-    name: "LAL",
+    name: "LAL Sweets",
     category: "AI",
     image: caseLal.url,
     description:
-      "An intelligent enquiry experience that qualifies conversations and routes them to the right team.",
-    services: ["AI agent", "Knowledge base", "Integrations"],
-    tech: ["LLM APIs", "RAG", "Vector DB"],
+      "Sweets e-commerce with an AI-assisted enquiry flow that qualifies orders and routes them to the team.",
+    services: ["AI agent", "Website", "Integrations"],
+    tech: ["LLM APIs", "WhatsApp API", "Commerce"],
     outcome: "Qualified conversations reach the team already contextualised.",
   },
   {
-    id: "vastra",
-    name: "Vastra",
-    category: "MARKETING",
-    image: caseVastra.url,
-    description:
-      "Growth system pairing a conversion-focused site with paid and content channels.",
-    services: ["Landing system", "Meta Ads", "Content"],
-    tech: ["React", "Meta Ads", "GA4"],
-  },
-  {
     id: "hocco",
-    name: "Hocco",
+    name: "Hocco Ice Cream",
     category: "MARKETING",
     image: caseHocco.url,
     description:
-      "Brand-led content and campaign support for a fast-moving consumer brand.",
+      "Playful brand-led site and campaign system for a fast-moving consumer ice cream brand.",
     services: ["Content", "UGC", "Campaigns"],
     tech: ["Meta Ads", "Content ops"],
+    outcome: "Brand storytelling that carries across web and social.",
   },
   {
     id: "xpert-awards",
@@ -125,9 +105,20 @@ export const projects: Project[] = [
     category: "WEBSITES",
     image: caseXpert.url,
     description:
-      "Manufacturer website built around quote generation — product range, trust signals and WhatsApp-first enquiries.",
+      "Trophy manufacturer website built around quote generation, product range and WhatsApp-first enquiries.",
     services: ["Website", "Lead capture", "SEO"],
     tech: ["React", "WhatsApp API", "GA4"],
     outcome: "Enquiries now arrive qualified through quote and WhatsApp flows.",
+  },
+  {
+    id: "infinity-boards",
+    name: "Infinity Boards",
+    category: "WEBSITES",
+    image: caseInfinity.url,
+    description:
+      "Manufacturer site for wood panels — product range, dealer trust proof and direct call/WhatsApp routing.",
+    services: ["Website", "Brand integration", "Lead routing"],
+    tech: ["React", "WhatsApp API", "Analytics"],
+    outcome: "Dealers and buyers reach the right team in one tap.",
   },
 ];
