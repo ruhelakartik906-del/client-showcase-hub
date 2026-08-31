@@ -7,12 +7,13 @@ export function Clients() {
     <section id="clients" className="relative border-t border-white/8 py-20 lg:py-24">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
-          label="07 — Trust"
+          label="Trust"
           title={
             <>
-              Trusted by businesses <span className="text-brand">we've built with.</span>
+              Built for <span className="text-brand">real businesses.</span>
             </>
           }
+          sub="From consumer brands and e-commerce businesses to education, manufacturing and service companies."
         />
       </div>
 

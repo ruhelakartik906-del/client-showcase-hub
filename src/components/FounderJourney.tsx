@@ -8,7 +8,7 @@ export function FounderJourney() {
     <section id="about" className="relative border-t border-white/8 py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
-          label="02 — Founder journey"
+          label="Journey"
           title={
             <>
               Started with freelancing.{" "}

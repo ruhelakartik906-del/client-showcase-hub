@@ -2,38 +2,38 @@ export const processStages = [
   {
     id: "01",
     title: "Discover",
-    text: "Understand business, audience, goals and requirements.",
-    hud: "Mission briefing",
+    text: "Understand the business, audience, goals and requirements.",
+    hud: "Requirements",
   },
   {
     id: "02",
     title: "Strategy",
-    text: "Define architecture, UX, technical approach and scope.",
-    hud: "Loadout selected",
+    text: "Define the architecture, UX, technical approach and scope.",
+    hud: "Architecture",
   },
   {
     id: "03",
     title: "Design",
     text: "Create the interface, flows and visual direction.",
-    hud: "Blueprint locked",
+    hud: "Interface",
   },
   {
     id: "04",
     title: "Build",
     text: "Develop the website, software, automation or AI system.",
-    hud: "Systems online",
+    hud: "Development",
   },
   {
     id: "05",
     title: "Test & Launch",
-    text: "QA, performance, deployment and launch.",
-    hud: "Final checks",
+    text: "QA, performance testing, deployment and launch.",
+    hud: "QA & deploy",
   },
   {
     id: "06",
     title: "Support & Scale",
     text: "Maintenance, optimization, automation and growth.",
-    hud: "Mission continues",
+    hud: "Ongoing",
   },
 ];
 

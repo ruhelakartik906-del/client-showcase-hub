@@ -34,13 +34,14 @@ export function AutomationShowcase() {
       <div className="pointer-events-none absolute inset-0 grid-bg opacity-40 [mask-image:radial-gradient(60%_50%_at_50%_50%,black,transparent)]" />
       <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
-          label="10 — AI & automation"
+          label="AI & automation"
           title={
             <>
-              Systems that work <span className="text-brand">while you sleep.</span>
+              Your business should not stop when your team{" "}
+              <span className="text-brand">logs off.</span>
             </>
           }
-          sub="Real workflows we deploy — each node is a live integration, not a diagram."
+          sub="Real workflows that connect AI, automation, CRM and customer communication."
         />
 
         <div className="mt-14 space-y-6">

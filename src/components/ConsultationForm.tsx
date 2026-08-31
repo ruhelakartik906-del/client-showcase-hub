@@ -26,7 +26,7 @@ const empty: Fields = {
   message: "",
 };
 
-const budgets = ["Under ₹50k", "₹50k – ₹1.5L", "₹1.5L – ₹5L", "₹5L+", "Not sure yet"];
+const budgets = ["₹50k – ₹1.5L", "₹1.5L – ₹3L", "₹3L – ₹5L", "₹5L+", "Not sure yet"];
 
 export function ConsultationForm() {
   const [values, setValues] = useState<Fields>(empty);
@@ -60,7 +60,7 @@ export function ConsultationForm() {
       <div className="mx-auto grid max-w-7xl gap-14 px-5 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20 lg:px-8">
         <div>
           <SectionHeading
-            label="14 — Free consultation"
+            label="Contact"
             title={
               <>
                 Tell us what <span className="text-brand">you're building.</span>
