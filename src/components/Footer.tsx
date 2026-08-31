@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { ArrowRight, Check } from "lucide-react";
-import logo from "@/assets/unknownhat-logo.png.asset.json";
+import logo from "@/assets/unknownhat-logo-v3.png.asset.json";
 import { site, whatsappLink } from "@/data/site";
 
 const columns = [
@@ -55,9 +55,12 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-[1.2fr_2fr]">
           <div>
-            <span className="inline-block rounded-lg bg-white px-3 py-2">
-              <img src={logo.url} alt="UnknownHat Agency logo" className="h-8 w-auto" loading="lazy" />
-            </span>
+            <img
+              src={logo.url}
+              alt="UnknownHat Agency logo"
+              className="h-9 w-auto [filter:invert(1)_hue-rotate(180deg)_saturate(1.5)_brightness(1.15)_drop-shadow(0_0_14px_rgba(255,255,255,0.25))]"
+              loading="lazy"
+            />
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-muted-foreground">
               {site.description}
             </p>
