@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X, ArrowRight } from "lucide-react";
-import logo from "@/assets/unknownhat.jpeg.asset.json";
+import logo from "@/assets/unknownhat-logo.png.asset.json";
 import { site } from "@/data/site";
 import { cn } from "@/lib/utils";
 
@@ -31,13 +31,13 @@ export function Navbar() {
         )}
       >
         <a href="#home" className="flex items-center gap-3">
-          <span className="rounded-md bg-white p-1">
+          <span className="rounded-lg bg-white px-2.5 py-1.5 transition-transform duration-300 hover:scale-[1.03]">
             <img
               src={logo.url}
               alt="UnknownHat Agency logo"
               className={cn(
                 "w-auto transition-all duration-500",
-                scrolled ? "h-6" : "h-8",
+                scrolled ? "h-5" : "h-6",
               )}
             />
           </span>
