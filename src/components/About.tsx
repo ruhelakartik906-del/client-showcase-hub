@@ -23,11 +23,11 @@ export function About() {
               className="aspect-4/3 w-full object-cover opacity-70 transition-transform duration-[1200ms] ease-out group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent" />
-            <button className="absolute inset-0 flex items-center justify-center">
+            <a href="#reels" aria-label="Watch the UnknownHat story reels" className="absolute inset-0 flex items-center justify-center">
               <span className="glow-brand flex h-20 w-20 items-center justify-center rounded-full bg-brand text-brand-foreground transition-transform duration-500 group-hover:scale-110">
                 <Play className="ml-1 h-6 w-6 fill-current" />
               </span>
-            </button>
+            </a>
             <p className="absolute bottom-5 left-5 font-mono text-[11px] uppercase tracking-[0.22em] text-brand">
               Watch the UnknownHat Story
             </p>

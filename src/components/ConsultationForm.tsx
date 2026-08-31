@@ -52,6 +52,24 @@ export function ConsultationForm() {
   const submit = (ev: FormEvent) => {
     ev.preventDefault();
     if (!validate()) return;
+    const lines = [
+      `Hi UnknownHat, I'd like to book a consultation.`,
+      ``,
+      `Name: ${values.name}`,
+      values.company ? `Company: ${values.company}` : null,
+      `Email: ${values.email}`,
+      `Phone/WhatsApp: ${values.phone}`,
+      `Service needed: ${values.need}`,
+      values.budget ? `Budget: ${values.budget}` : null,
+      ``,
+      `Project details:`,
+      values.message,
+    ].filter((l): l is string => l !== null);
+    window.open(
+      `https://wa.me/${site.whatsappNumber}?text=${encodeURIComponent(lines.join("\n"))}`,
+      "_blank",
+      "noopener,noreferrer",
+    );
     setSent(true);
   };
 
