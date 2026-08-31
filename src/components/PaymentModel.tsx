@@ -12,10 +12,10 @@ export function PaymentModel() {
           label="06 — Engagement"
           title={
             <>
-              Simple. Transparent. <span className="text-brand">50 / 50.</span>
+              Simple &amp; transparent <span className="text-brand">payments.</span>
             </>
           }
-          sub="Transparent project-based engagement. Payment terms are agreed in writing before any work begins."
+          sub="For standard projects, we generally work with a simple 50/50 structure. The exact payment schedule is agreed in writing before development begins."
         />
 
         <div className="mt-14 grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-center lg:gap-16">
@@ -38,9 +38,9 @@ export function PaymentModel() {
           <div>
             <Reveal>
               <p className="text-sm leading-relaxed text-muted-foreground sm:text-base">
-                50% is paid upfront to reserve the team and begin work. The remaining
-                50% is paid on successful completion, or at the agreed delivery
-                milestone for larger builds.
+                50% is paid at project kickoff to begin work, and 50% at the final
+                delivery milestone. For larger projects, payment can be divided into
+                multiple milestones based on the project scope.
               </p>
             </Reveal>
 

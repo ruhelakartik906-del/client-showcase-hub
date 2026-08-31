@@ -4,10 +4,10 @@ import { Reveal } from "./ui-kit/Reveal";
 import { SectionLabel } from "./ui-kit/SectionHeading";
 
 const pillars = [
-  { k: "Technology", v: "Engineering-first delivery, not template assembly." },
-  { k: "Automation", v: "Systems that remove repetitive human work." },
-  { k: "Strategy", v: "Scope built around business outcomes." },
-  { k: "Partnership", v: "Long-term ownership after launch." },
+  { k: "Custom Built", v: "We build around your requirements instead of forcing your business into a template." },
+  { k: "Business Focused", v: "Every system is designed around a real business objective." },
+  { k: "Automation Ready", v: "We remove repetitive manual work wherever technology can handle it." },
+  { k: "Long-Term Support", v: "We can continue improving and maintaining the system after launch." },
 ];
 
 export function About() {
@@ -38,13 +38,18 @@ export function About() {
           <Reveal>
             <SectionLabel>05 — Behind the build</SectionLabel>
             <h2 className="mt-4 text-3xl font-bold leading-[1.05] sm:text-4xl lg:text-5xl">
-              More than <span className="text-brand">an agency.</span>
+              More than just <span className="text-brand">a website.</span>
             </h2>
             <p className="mt-5 text-sm leading-relaxed text-muted-foreground sm:text-base">
-              UnknownHat is a technology-focused agency building digital products,
-              automation systems and growth infrastructure for businesses. We stay
-              involved after launch, because systems only compound when someone keeps
-              improving them.
+              A website is only one part of a digital business. We can connect your
+              website with CRM, WhatsApp, AI, automation, software and other tools
+              so your entire customer and business workflow works together.
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
+              UnknownHat is led by Nitin Raghav, who started freelancing in 2023 by
+              building websites and solving real problems for businesses. That work
+              grew beyond websites into software, automation, CRM, WhatsApp systems
+              and AI — and today runs as UnknownHat Agency and Hatflow.
             </p>
           </Reveal>
 

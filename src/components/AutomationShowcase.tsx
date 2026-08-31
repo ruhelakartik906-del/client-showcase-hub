@@ -37,10 +37,10 @@ export function AutomationShowcase() {
           label="10 — AI & automation"
           title={
             <>
-              Systems that work <span className="text-brand">while you sleep.</span>
+              Automate the work that <span className="text-brand">slows your business down.</span>
             </>
           }
-          sub="Real workflows we deploy — each node is a live integration, not a diagram."
+          sub="We connect AI, WhatsApp, CRM, APIs and automation tools to handle repetitive business tasks automatically. These are real workflows we deploy — each step is a live integration, not a diagram."
         />
 
         <div className="mt-14 space-y-6">

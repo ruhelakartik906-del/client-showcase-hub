@@ -15,7 +15,7 @@ export function FounderJourney() {
               <span className="text-brand">Built a system around it.</span>
             </>
           }
-          sub="Started by solving individual client problems. Expanded into websites, software, automation, AI and growth systems. Today UnknownHat focuses on building connected digital systems for businesses."
+          sub="Nitin started freelancing in 2023 by building websites for individual clients. The work expanded into software, automation, AI and growth systems — and today runs as UnknownHat Agency and Hatflow."
         />
 
         <ol className="relative mt-16 border-l border-white/10 pl-8 sm:pl-12">

@@ -27,18 +27,19 @@ export function Hero() {
 
           <Reveal delay={80}>
             <h1 className="mt-6 text-balance text-[2.6rem] font-extrabold leading-[0.98] sm:text-6xl xl:text-7xl">
-              We <span className="text-brand text-glow">build</span>,{" "}
-              <span className="text-brand text-glow">automate</span> &amp;{" "}
-              <span className="text-brand text-glow">grow</span>
-              <br className="hidden sm:block" /> digital businesses.
+              We build <span className="text-brand text-glow">websites</span>,{" "}
+              <span className="text-brand text-glow">software</span>,{" "}
+              <span className="text-brand text-glow">AI</span> &amp;{" "}
+              <span className="text-brand text-glow">automation</span>
+              <br className="hidden sm:block" /> systems for businesses.
             </h1>
           </Reveal>
 
           <Reveal delay={140}>
             <p className="mt-6 max-w-xl text-pretty text-sm leading-relaxed text-muted-foreground sm:text-base">
-              Websites, software, CRM, automation, AI systems, WhatsApp solutions,
-              growth and content — engineered around the way your business actually
-              works.
+              From high-performance websites and custom software to AI agents, CRM
+              systems, WhatsApp automation and business workflows — we build digital
+              systems around your actual business needs.
             </p>
           </Reveal>
 
@@ -48,7 +49,7 @@ export function Hero() {
                 Start a Project <ArrowRight className="h-4 w-4" />
               </MagneticButton>
               <MagneticButton href="#work" variant="ghost">
-                Explore Our Work <ArrowDown className="h-4 w-4" />
+                View Our Work <ArrowDown className="h-4 w-4" />
               </MagneticButton>
             </div>
           </Reveal>

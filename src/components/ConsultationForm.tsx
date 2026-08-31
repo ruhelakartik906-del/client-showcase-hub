@@ -63,10 +63,10 @@ export function ConsultationForm() {
             label="14 — Free consultation"
             title={
               <>
-                Tell us what <span className="text-brand">you're building.</span>
+                Let's talk about <span className="text-brand">your project.</span>
               </>
             }
-            sub="Tell us about your business, challenge or idea. We'll understand the requirement and suggest the right approach."
+            sub="Tell us what you are trying to build, improve or automate. We'll understand your requirement and recommend the right approach."
           />
 
           <div className="mt-10 space-y-4">
@@ -138,7 +138,7 @@ export function ConsultationForm() {
 
               <div className="sm:col-span-2 flex flex-wrap items-center gap-4">
                 <MagneticButton type="submit">
-                  Send Project Brief <ArrowRight className="h-4 w-4" />
+                  Book a Consultation <ArrowRight className="h-4 w-4" />
                 </MagneticButton>
                 <p className="text-xs text-muted-foreground">
                   We'll review your requirement and get back with the next steps.

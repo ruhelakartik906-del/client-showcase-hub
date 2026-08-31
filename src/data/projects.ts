@@ -39,8 +39,8 @@ export const projects: Project[] = [
     category: "WEBSITES",
     image: caseVastra.url,
     description:
-      "Premium bedding e-commerce storefront — collection browsing, trust bar and a clean path to checkout.",
-    services: ["E-commerce build", "UX", "Performance"],
+      "An e-commerce website for a premium bedding brand — with product collections, a trust section and a clean path from browsing to checkout.",
+    services: ["E-commerce website", "UX design", "Performance"],
     tech: ["React", "Payments", "GA4"],
     outcome: "Faster catalogue browsing and a cleaner path to checkout.",
   },
@@ -50,7 +50,7 @@ export const projects: Project[] = [
     category: "WEBSITES",
     image: caseStreet9.url,
     description:
-      "Fashion e-commerce with quick-buy product cards, category discovery and WhatsApp support built in.",
+      "A fashion e-commerce website with quick-buy product cards, category discovery and built-in WhatsApp support for shoppers.",
     services: ["Website", "UX", "Conversion"],
     tech: ["React", "Responsive UI", "Analytics"],
     outcome: "A polished storefront that keeps shoppers moving to checkout.",
@@ -61,7 +61,7 @@ export const projects: Project[] = [
     category: "SOFTWARE",
     image: caseDodesk.url,
     description:
-      "Large-catalogue commerce platform with category systems, merchandising blocks and offer management.",
+      "A large-catalogue commerce platform with organised category systems, merchandising blocks and offer management for the team.",
     services: ["Product design", "Web app", "Deployment"],
     tech: ["React", "Node", "PostgreSQL"],
     outcome: "Manual coordination replaced by a single operating surface.",
@@ -72,7 +72,7 @@ export const projects: Project[] = [
     category: "MARKETING",
     image: caseKirtilals.url,
     description:
-      "Heritage jewellery brand experience — festive campaigns, virtual try-on entry points and trust signals.",
+      "Digital presence work for a heritage jewellery brand — festive campaigns, website experience improvements and content across channels.",
     services: ["Campaign strategy", "Content", "Growth"],
     tech: ["Meta Ads", "Content ops", "Analytics"],
     outcome: "A consistently premium presence across digital touchpoints.",
@@ -83,7 +83,7 @@ export const projects: Project[] = [
     category: "AI",
     image: caseLal.url,
     description:
-      "Sweets e-commerce with an AI-assisted enquiry flow that qualifies orders and routes them to the team.",
+      "A sweets e-commerce website with an AI-assisted enquiry flow that qualifies orders and routes them directly to the team.",
     services: ["AI agent", "Website", "Integrations"],
     tech: ["LLM APIs", "WhatsApp API", "Commerce"],
     outcome: "Qualified conversations reach the team already contextualised.",
@@ -94,7 +94,7 @@ export const projects: Project[] = [
     category: "MARKETING",
     image: caseHocco.url,
     description:
-      "Playful brand-led site and campaign system for a fast-moving consumer ice cream brand.",
+      "A brand-led website and campaign system for a fast-growing ice cream brand, built to carry the same playful identity across web and social.",
     services: ["Content", "UGC", "Campaigns"],
     tech: ["Meta Ads", "Content ops"],
     outcome: "Brand storytelling that carries across web and social.",
@@ -105,7 +105,7 @@ export const projects: Project[] = [
     category: "WEBSITES",
     image: caseXpert.url,
     description:
-      "Trophy manufacturer website built around quote generation, product range and WhatsApp-first enquiries.",
+      "A website for a trophy manufacturer built around quote requests, product range browsing and WhatsApp-first enquiries.",
     services: ["Website", "Lead capture", "SEO"],
     tech: ["React", "WhatsApp API", "GA4"],
     outcome: "Enquiries now arrive qualified through quote and WhatsApp flows.",
@@ -116,7 +116,7 @@ export const projects: Project[] = [
     category: "WEBSITES",
     image: caseInfinity.url,
     description:
-      "Manufacturer site for wood panels — product range, dealer trust proof and direct call/WhatsApp routing.",
+      "A website for a wood panel manufacturer — product range, dealer trust proof and direct call/WhatsApp routing for buyers.",
     services: ["Website", "Brand integration", "Lead routing"],
     tech: ["React", "WhatsApp API", "Analytics"],
     outcome: "Dealers and buyers reach the right team in one tap.",
