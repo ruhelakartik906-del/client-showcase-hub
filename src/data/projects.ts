@@ -1,6 +1,3 @@
-import work1 from "@/assets/work-1.jpg";
-import work2 from "@/assets/work-2.jpg";
-import work3 from "@/assets/work-3.jpg";
 import caseHocco from "@/assets/case-hocco.png.asset.json";
 import caseVastra from "@/assets/case-vastra.png.asset.json";
 import caseDodesk from "@/assets/case-dodesk.png.asset.json";
