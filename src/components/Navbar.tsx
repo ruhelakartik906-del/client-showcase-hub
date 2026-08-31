@@ -65,7 +65,12 @@ export function Navbar() {
             <a
               key={item.href}
               href={item.href}
-              className="rounded-full px-3.5 py-2 text-sm text-muted-foreground transition-colors hover:bg-white/5 hover:text-foreground"
+              className={cn(
+                "relative rounded-full px-3.5 py-2 text-sm transition-colors",
+                active === item.href
+                  ? "bg-brand/10 text-brand"
+                  : "text-muted-foreground hover:bg-white/5 hover:text-foreground",
+              )}
             >
               {item.label}
             </a>
@@ -104,7 +109,12 @@ export function Navbar() {
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="rounded-lg px-3 py-2.5 text-sm text-muted-foreground hover:bg-white/5 hover:text-foreground"
+                className={cn(
+                  "rounded-lg px-3 py-2.5 text-sm transition-colors",
+                  active === item.href
+                    ? "bg-brand/10 text-brand"
+                    : "text-muted-foreground hover:bg-white/5 hover:text-foreground",
+                )}
               >
                 {item.label}
               </a>
