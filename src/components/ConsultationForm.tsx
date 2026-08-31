@@ -166,7 +166,7 @@ function Field({
   full,
 }: {
   label: string;
-  error?: string;
+  error?: string | undefined;
   children: React.ReactNode;
   full?: boolean;
 }) {
