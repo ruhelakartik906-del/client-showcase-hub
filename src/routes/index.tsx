@@ -20,6 +20,8 @@ import { WhatsAppCTA } from "@/components/WhatsAppCTA";
 import { Stats } from "@/components/Stats";
 import { FinalCTA } from "@/components/FinalCTA";
 import { Footer } from "@/components/Footer";
+import { WhatsAppFloat } from "@/components/WhatsAppFloat";
+
 
 const title = "UnknownHat Agency — Websites, Automation & AI Systems";
 const description =
