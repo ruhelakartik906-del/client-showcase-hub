@@ -1,3 +1,8 @@
+// ============================================================
+// ✏️  MAIN SITE INFO — yahan se poori website ki basic
+//     information control hoti hai (naam, contact, WhatsApp,
+//     social links, navbar). Bas value change karo, save karo.
+// ============================================================
 export const site = {
   name: "UnknownHat Agency",
   shortName: "UnknownHat",
