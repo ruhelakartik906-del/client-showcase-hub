@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { Play, X } from "lucide-react";
 import { reels, type Reel } from "@/data/reels";
 import { Reveal } from "./ui-kit/Reveal";
@@ -103,7 +103,7 @@ export function Reels() {
             ) : (
               <img src={open.thumb} alt={open.title} className="aspect-9/16 w-full object-cover" />
             )}
-            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink to-transparent p-5">
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink to-transparent p-5 pb-14">
               <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-brand">
                 {open.category} · {open.duration}
               </p>
