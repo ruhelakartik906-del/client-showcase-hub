@@ -161,11 +161,11 @@ function WorkCollage() {
         />
       </div>
 
-      <div className="glass float-slow absolute -left-5 top-24 hidden rounded-xl px-3.5 py-2.5 sm:block">
+      <div className="glass float-slow absolute -left-6 -bottom-6 hidden rounded-xl px-3.5 py-2.5 sm:block">
         <p className="font-mono text-[10px] text-brand">workflow.run()</p>
         <p className="mt-0.5 font-mono text-[10px] text-muted-foreground">lead → ai → crm</p>
       </div>
-      <div className="glass float-slow absolute -right-4 bottom-10 hidden rounded-xl px-3.5 py-2.5 [animation-delay:1.4s] sm:block">
+      <div className="glass float-slow absolute -right-6 -top-6 hidden rounded-xl px-3.5 py-2.5 [animation-delay:1.4s] sm:block">
         <p className="font-mono text-[10px] text-muted-foreground">systems shipped</p>
         <p className="mt-0.5 font-mono text-[11px] font-semibold text-brand">web · crm · ai</p>
       </div>
