@@ -24,13 +24,14 @@ export function Services() {
     <section id="services" className="relative border-t border-white/8 py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
-          label="03 — What we build"
+          label="Services"
           title={
             <>
-              Seven systems. <span className="text-brand">One stack.</span>
+              Everything your business needs to{" "}
+              <span className="text-brand">operate digitally.</span>
             </>
           }
-          sub="Each capability is built to connect with the others — a website that feeds a CRM, a CRM that triggers automation, automation that talks to your customers."
+          sub="We don't build isolated tools. We connect technology into systems that work together."
         />
 
         <div className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/8 sm:grid-cols-2 lg:grid-cols-3">
@@ -62,7 +63,7 @@ export function Services() {
                 </p>
 
                 <span className="relative mt-auto inline-flex translate-y-1 items-center gap-1.5 pt-3 font-mono text-[11px] uppercase tracking-[0.18em] text-brand opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                  View details <ArrowUpRight className="h-3.5 w-3.5" />
+                  View Service <ArrowUpRight className="h-3.5 w-3.5" />
                 </span>
               </button>
             </Reveal>

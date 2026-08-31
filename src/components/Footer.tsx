@@ -1,5 +1,3 @@
-import { useState, type FormEvent } from "react";
-import { ArrowRight, Check } from "lucide-react";
 import logo from "@/assets/unknownhat-logo-v3.png.asset.json";
 import { site, whatsappLink } from "@/data/site";
 
@@ -20,7 +18,7 @@ const columns = [
     title: "Company",
     links: [
       { label: "About", href: "#about" },
-      { label: "Founder", href: "#home" },
+      { label: "Founder", href: "#about" },
       { label: "Process", href: "#process" },
       { label: "Work", href: "#work" },
       { label: "Reels", href: "#reels" },
@@ -42,14 +40,6 @@ const columns = [
 ];
 
 export function Footer() {
-  const [email, setEmail] = useState("");
-  const [done, setDone] = useState(false);
-
-  const submit = (e: FormEvent) => {
-    e.preventDefault();
-    if (/^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(email)) setDone(true);
-  };
-
   return (
     <footer className="relative border-t border-white/10 bg-ink pt-16">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
@@ -62,30 +52,9 @@ export function Footer() {
               loading="lazy"
             />
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-muted-foreground">
-              {site.description}
+              Digital technology, automation, software and growth systems for modern businesses.
             </p>
 
-            <form onSubmit={submit} className="mt-8 max-w-sm">
-              <p className="text-sm font-semibold">Get insights that help your business grow.</p>
-              <div className="mt-3 flex gap-2">
-                <input
-                  type="email"
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="you@company.com"
-                  className="w-full rounded-full border border-white/12 bg-background/60 px-4 py-2.5 text-sm outline-none transition-colors focus:border-brand"
-                />
-                <button
-                  type="submit"
-                  aria-label="Subscribe"
-                  className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand text-brand-foreground transition-transform hover:scale-105"
-                >
-                  {done ? <Check className="h-4 w-4" /> : <ArrowRight className="h-4 w-4" />}
-                </button>
-              </div>
-              {done ? <p className="mt-2 text-xs text-brand">You're on the list.</p> : null}
-            </form>
           </div>
 
           <div className="grid gap-10 sm:grid-cols-3">

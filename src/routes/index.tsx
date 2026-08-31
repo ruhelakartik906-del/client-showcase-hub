@@ -3,27 +3,26 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/Navbar";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { Hero } from "@/components/Hero";
+import { Clients } from "@/components/Clients";
+import { About } from "@/components/About";
 import { FounderJourney } from "@/components/FounderJourney";
 import { Services } from "@/components/Services";
-import { Process } from "@/components/Process";
-import { About } from "@/components/About";
-import { PaymentModel } from "@/components/PaymentModel";
-import { Clients } from "@/components/Clients";
-import { Portfolio } from "@/components/Portfolio";
 import { Ecosystem } from "@/components/Ecosystem";
+import { Portfolio } from "@/components/Portfolio";
 import { AutomationShowcase } from "@/components/AutomationShowcase";
+import { Process } from "@/components/Process";
+import { WhyUs } from "@/components/WhyUs";
+import { PaymentModel } from "@/components/PaymentModel";
 import { Reels } from "@/components/Reels";
-import { Testimonials } from "@/components/Testimonials";
 import { FAQ } from "@/components/FAQ";
 import { ConsultationForm } from "@/components/ConsultationForm";
 import { WhatsAppCTA } from "@/components/WhatsAppCTA";
-import { Stats } from "@/components/Stats";
 import { FinalCTA } from "@/components/FinalCTA";
 import { Footer } from "@/components/Footer";
 
-const title = "UnknownHat Agency — Websites, Automation & AI Systems";
+const title = "UnknownHat — Digital Systems, Automation & AI for Business";
 const description =
-  "Founder-led technology studio building websites, software, CRM, automation, WhatsApp and AI systems for businesses that want to scale.";
+  "UnknownHat builds digital systems that help businesses sell, operate and scale — websites, software, CRM, automation, WhatsApp and AI, connected end to end.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -33,7 +32,27 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "/" },
       { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [{ rel: "canonical", href: "/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "UnknownHat",
+          description,
+          email: "hello@unknownhat.agency",
+          founder: {
+            "@type": "Person",
+            name: "Nitin Raghav",
+            jobTitle: "Founder & Technology Lead",
+          },
+          areaServed: "Worldwide",
+        }),
+      },
     ],
   }),
   component: Home,
@@ -46,18 +65,17 @@ function Home() {
       <Navbar />
       <main>
         <Hero />
+        <Clients />
+        <About />
         <FounderJourney />
         <Services />
-        <Process />
-        <About />
-        <PaymentModel />
-        <Clients />
-        <Portfolio />
         <Ecosystem />
+        <Portfolio />
         <AutomationShowcase />
+        <Process />
+        <WhyUs />
+        <PaymentModel />
         <Reels />
-        <Testimonials />
-        <Stats />
         <FAQ />
         <ConsultationForm />
         <WhatsAppCTA />

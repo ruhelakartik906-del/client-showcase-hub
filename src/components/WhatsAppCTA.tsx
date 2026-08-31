@@ -23,10 +23,10 @@ export function WhatsAppCTA() {
               </div>
               <div className="flex flex-wrap gap-3">
                 <MagneticButton href={whatsappLink} target="_blank">
-                  <MessageCircle className="h-4 w-4" /> Get an Offer on WhatsApp
+                  <MessageCircle className="h-4 w-4" /> Talk on WhatsApp
                 </MagneticButton>
                 <MagneticButton href="#contact" variant="ghost">
-                  Talk to a Consultant <ArrowRight className="h-4 w-4" />
+                  Send a Project Brief <ArrowRight className="h-4 w-4" />
                 </MagneticButton>
               </div>
             </div>
