@@ -1,6 +1,11 @@
-import work1 from "@/assets/work-1.jpg";
-import work2 from "@/assets/work-2.jpg";
-import work3 from "@/assets/work-3.jpg";
+import bedsheets from "@/assets/bedsheets.webp.asset.json";
+import dodesk from "@/assets/dodesk.svg.asset.json";
+import hocco from "@/assets/hocco.png.asset.json";
+import kirtilals from "@/assets/kk.avif.asset.json";
+import lal from "@/assets/lal.avif.asset.json";
+import stoa from "@/assets/stoa.avif.asset.json";
+import street9 from "@/assets/street9.avif.asset.json";
+import vastra from "@/assets/vastra.webp.asset.json";
 
 export const projectCategories = [
   "ALL",
@@ -20,6 +25,7 @@ export type Project = {
   name: string;
   category: Exclude<ProjectCategory, "ALL">;
   image: string;
+  imageFit?: "cover" | "contain";
   description: string;
   services: string[];
   tech: string[];
@@ -31,7 +37,8 @@ export const projects: Project[] = [
     id: "bedsheets-india",
     name: "Bedsheets India",
     category: "WEBSITES",
-    image: work1,
+    image: bedsheets.url,
+    imageFit: "contain",
     description:
       "E-commerce storefront rebuilt around speed, product discovery and checkout clarity.",
     services: ["E-commerce build", "UX", "Performance"],
@@ -42,7 +49,8 @@ export const projects: Project[] = [
     id: "do-desk",
     name: "Do Desk",
     category: "SOFTWARE",
-    image: work2,
+    image: dodesk.url,
+    imageFit: "contain",
     description:
       "Custom workspace platform with role-based access and operational dashboards.",
     services: ["Product design", "Web app", "Deployment"],
@@ -53,7 +61,8 @@ export const projects: Project[] = [
     id: "stoa-crm",
     name: "Stoa CRM",
     category: "CRM",
-    image: work3,
+    image: stoa.url,
+    imageFit: "contain",
     description:
       "Lead pipeline with automated follow-ups, ownership rules and reporting.",
     services: ["CRM build", "Automation", "Reporting"],
@@ -61,34 +70,37 @@ export const projects: Project[] = [
     outcome: "Every lead tracked from first touch to closure.",
   },
   {
-    id: "unicare",
-    name: "Unicare",
-    category: "WHATSAPP",
-    image: work2,
+    id: "street9",
+    name: "Street9",
+    category: "WEBSITES",
+    image: street9.url,
+    imageFit: "contain",
     description:
-      "WhatsApp Cloud API system for enquiries, broadcasts and human handoff.",
-    services: ["WhatsApp API", "Chatbot", "CRM sync"],
-    tech: ["WhatsApp Cloud API", "n8n", "CRM"],
-    outcome: "First response time reduced to seconds, around the clock.",
+      "A focused digital presence designed to make the brand clear, credible and easy to discover.",
+    services: ["Website", "UX", "Brand integration"],
+    tech: ["React", "Responsive UI", "Analytics"],
+    outcome: "A polished digital destination aligned with the brand identity.",
   },
   {
-    id: "hatflow",
-    name: "Hatflow",
-    category: "AUTOMATION",
-    image: work3,
+    id: "kirtilals",
+    name: "Kirtilals",
+    category: "MARKETING",
+    image: kirtilals.url,
+    imageFit: "contain",
     description:
-      "Automation product built in-house: connected workflows for lead, ops and reporting systems.",
-    services: ["Product", "Workflow engine", "Integrations"],
-    tech: ["n8n", "Webhooks", "Cloud"],
-    outcome: "Repetitive operational work runs without human touch.",
+      "Premium digital campaign support built around a heritage jewellery brand and its audience.",
+    services: ["Campaign strategy", "Content", "Growth"],
+    tech: ["Meta Ads", "Content ops", "Analytics"],
+    outcome: "A more consistent premium presence across digital touchpoints.",
   },
   {
-    id: "coco",
-    name: "COCO",
+    id: "lal",
+    name: "LAL",
     category: "AI",
-    image: work1,
+    image: lal.url,
+    imageFit: "contain",
     description:
-      "AI agent that qualifies enquiries, answers product questions and routes to sales.",
+      "An intelligent enquiry experience that qualifies conversations and routes them to the right team.",
     services: ["AI agent", "Knowledge base", "Integrations"],
     tech: ["LLM APIs", "RAG", "Vector DB"],
     outcome: "Qualified conversations reach the team already contextualised.",
@@ -97,7 +109,8 @@ export const projects: Project[] = [
     id: "vastra",
     name: "Vastra",
     category: "MARKETING",
-    image: work1,
+    image: vastra.url,
+    imageFit: "contain",
     description:
       "Growth system pairing a conversion-focused site with paid and content channels.",
     services: ["Landing system", "Meta Ads", "Content"],
@@ -107,7 +120,8 @@ export const projects: Project[] = [
     id: "hocco",
     name: "Hocco",
     category: "MARKETING",
-    image: work2,
+    image: hocco.url,
+    imageFit: "contain",
     description:
       "Brand-led content and campaign support for a fast-moving consumer brand.",
     services: ["Content", "UGC", "Campaigns"],

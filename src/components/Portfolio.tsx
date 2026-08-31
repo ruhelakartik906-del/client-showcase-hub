@@ -11,6 +11,16 @@ import { SectionHeading } from "./ui-kit/SectionHeading";
 import { MagneticButton } from "./ui-kit/Magnetic";
 import { cn } from "@/lib/utils";
 
+function projectImageClass(project: Project, modal = false) {
+  return cn(
+    modal ? "aspect-16/9 w-full" : "h-full w-full",
+    project.imageFit === "contain"
+      ? "bg-white object-contain p-8 sm:p-12"
+      : "object-cover",
+    !modal && "transition-transform duration-[1100ms] ease-out group-hover:scale-[1.06]",
+  );
+}
+
 export function Portfolio() {
   const [filter, setFilter] = useState<ProjectCategory>("ALL");
   const [open, setOpen] = useState<Project | null>(null);
@@ -72,7 +82,7 @@ export function Portfolio() {
                     src={p.image}
                     alt={`${p.name} project preview`}
                     loading="lazy"
-                    className="h-full w-full object-cover transition-transform duration-[1100ms] ease-out group-hover:scale-[1.06]"
+                    className={projectImageClass(p)}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/40 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-95" />
                   <span className="absolute left-5 top-5 rounded-full border border-brand/40 bg-ink/70 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.18em] text-brand">
@@ -128,7 +138,7 @@ function CaseStudy({ project, onClose }: { project: Project; onClose: () => void
         <img
           src={project.image}
           alt={`${project.name} case study cover`}
-          className="aspect-16/9 w-full object-cover"
+          className={projectImageClass(project, true)}
         />
         <div className="p-7 sm:p-10">
           <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-brand">
