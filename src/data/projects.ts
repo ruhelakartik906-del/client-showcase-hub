@@ -1,6 +1,14 @@
 import work1 from "@/assets/work-1.jpg";
 import work2 from "@/assets/work-2.jpg";
 import work3 from "@/assets/work-3.jpg";
+import caseHocco from "@/assets/case-hocco.png.asset.json";
+import caseVastra from "@/assets/case-vastra.png.asset.json";
+import caseDodesk from "@/assets/case-dodesk.png.asset.json";
+import caseStreet9 from "@/assets/case-street9.png.asset.json";
+import caseKirtilals from "@/assets/case-kirtilals.png.asset.json";
+import caseLal from "@/assets/case-lal.png.asset.json";
+import caseXpert from "@/assets/case-xpert.png.asset.json";
+import caseInfinity from "@/assets/case-infinity.png.asset.json";
 
 export const projectCategories = [
   "ALL",
@@ -32,7 +40,7 @@ export const projects: Project[] = [
     id: "bedsheets-india",
     name: "Bedsheets India",
     category: "WEBSITES",
-    image: work1,
+    image: caseVastra.url,
     description:
       "E-commerce storefront rebuilt around speed, product discovery and checkout clarity.",
     services: ["E-commerce build", "UX", "Performance"],
@@ -43,7 +51,7 @@ export const projects: Project[] = [
     id: "do-desk",
     name: "Do Desk",
     category: "SOFTWARE",
-    image: work2,
+    image: caseDodesk.url,
     description:
       "Custom workspace platform with role-based access and operational dashboards.",
     services: ["Product design", "Web app", "Deployment"],
@@ -54,7 +62,7 @@ export const projects: Project[] = [
     id: "stoa-crm",
     name: "Stoa CRM",
     category: "CRM",
-    image: work3,
+    image: caseInfinity.url,
     description:
       "Lead pipeline with automated follow-ups, ownership rules and reporting.",
     services: ["CRM build", "Automation", "Reporting"],
@@ -65,7 +73,7 @@ export const projects: Project[] = [
     id: "street9",
     name: "Street9",
     category: "WEBSITES",
-    image: work1,
+    image: caseStreet9.url,
     description:
       "A focused digital presence designed to make the brand clear, credible and easy to discover.",
     services: ["Website", "UX", "Brand integration"],
@@ -76,7 +84,7 @@ export const projects: Project[] = [
     id: "kirtilals",
     name: "Kirtilals",
     category: "MARKETING",
-    image: work2,
+    image: caseKirtilals.url,
     description:
       "Premium digital campaign support built around a heritage jewellery brand and its audience.",
     services: ["Campaign strategy", "Content", "Growth"],
@@ -87,7 +95,7 @@ export const projects: Project[] = [
     id: "lal",
     name: "LAL",
     category: "AI",
-    image: work3,
+    image: caseLal.url,
     description:
       "An intelligent enquiry experience that qualifies conversations and routes them to the right team.",
     services: ["AI agent", "Knowledge base", "Integrations"],
@@ -98,7 +106,7 @@ export const projects: Project[] = [
     id: "vastra",
     name: "Vastra",
     category: "MARKETING",
-    image: work1,
+    image: caseVastra.url,
     description:
       "Growth system pairing a conversion-focused site with paid and content channels.",
     services: ["Landing system", "Meta Ads", "Content"],
@@ -108,10 +116,21 @@ export const projects: Project[] = [
     id: "hocco",
     name: "Hocco",
     category: "MARKETING",
-    image: work2,
+    image: caseHocco.url,
     description:
       "Brand-led content and campaign support for a fast-moving consumer brand.",
     services: ["Content", "UGC", "Campaigns"],
     tech: ["Meta Ads", "Content ops"],
+  },
+  {
+    id: "xpert-awards",
+    name: "Xpert Awards",
+    category: "WEBSITES",
+    image: caseXpert.url,
+    description:
+      "Manufacturer website built around quote generation — product range, trust signals and WhatsApp-first enquiries.",
+    services: ["Website", "Lead capture", "SEO"],
+    tech: ["React", "WhatsApp API", "GA4"],
+    outcome: "Enquiries now arrive qualified through quote and WhatsApp flows.",
   },
 ];
