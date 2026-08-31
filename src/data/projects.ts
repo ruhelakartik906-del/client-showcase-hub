@@ -1,11 +1,6 @@
-import bedsheets from "@/assets/bedsheets.webp.asset.json";
-import dodesk from "@/assets/dodesk.svg.asset.json";
-import hocco from "@/assets/hocco.png.asset.json";
-import kirtilals from "@/assets/kk.avif.asset.json";
-import lal from "@/assets/lal.avif.asset.json";
-import stoa from "@/assets/stoa.avif.asset.json";
-import street9 from "@/assets/street9.avif.asset.json";
-import vastra from "@/assets/vastra.webp.asset.json";
+import work1 from "@/assets/work-1.jpg";
+import work2 from "@/assets/work-2.jpg";
+import work3 from "@/assets/work-3.jpg";
 
 export const projectCategories = [
   "ALL",
@@ -37,8 +32,7 @@ export const projects: Project[] = [
     id: "bedsheets-india",
     name: "Bedsheets India",
     category: "WEBSITES",
-    image: bedsheets.url,
-    imageFit: "contain",
+    image: work1,
     description:
       "E-commerce storefront rebuilt around speed, product discovery and checkout clarity.",
     services: ["E-commerce build", "UX", "Performance"],
@@ -49,8 +43,7 @@ export const projects: Project[] = [
     id: "do-desk",
     name: "Do Desk",
     category: "SOFTWARE",
-    image: dodesk.url,
-    imageFit: "contain",
+    image: work2,
     description:
       "Custom workspace platform with role-based access and operational dashboards.",
     services: ["Product design", "Web app", "Deployment"],
@@ -61,8 +54,7 @@ export const projects: Project[] = [
     id: "stoa-crm",
     name: "Stoa CRM",
     category: "CRM",
-    image: stoa.url,
-    imageFit: "contain",
+    image: work3,
     description:
       "Lead pipeline with automated follow-ups, ownership rules and reporting.",
     services: ["CRM build", "Automation", "Reporting"],
@@ -73,8 +65,7 @@ export const projects: Project[] = [
     id: "street9",
     name: "Street9",
     category: "WEBSITES",
-    image: street9.url,
-    imageFit: "contain",
+    image: work1,
     description:
       "A focused digital presence designed to make the brand clear, credible and easy to discover.",
     services: ["Website", "UX", "Brand integration"],
@@ -85,8 +76,7 @@ export const projects: Project[] = [
     id: "kirtilals",
     name: "Kirtilals",
     category: "MARKETING",
-    image: kirtilals.url,
-    imageFit: "contain",
+    image: work2,
     description:
       "Premium digital campaign support built around a heritage jewellery brand and its audience.",
     services: ["Campaign strategy", "Content", "Growth"],
@@ -97,8 +87,7 @@ export const projects: Project[] = [
     id: "lal",
     name: "LAL",
     category: "AI",
-    image: lal.url,
-    imageFit: "contain",
+    image: work3,
     description:
       "An intelligent enquiry experience that qualifies conversations and routes them to the right team.",
     services: ["AI agent", "Knowledge base", "Integrations"],
@@ -109,8 +98,7 @@ export const projects: Project[] = [
     id: "vastra",
     name: "Vastra",
     category: "MARKETING",
-    image: vastra.url,
-    imageFit: "contain",
+    image: work1,
     description:
       "Growth system pairing a conversion-focused site with paid and content channels.",
     services: ["Landing system", "Meta Ads", "Content"],
@@ -120,8 +108,7 @@ export const projects: Project[] = [
     id: "hocco",
     name: "Hocco",
     category: "MARKETING",
-    image: hocco.url,
-    imageFit: "contain",
+    image: work2,
     description:
       "Brand-led content and campaign support for a fast-moving consumer brand.",
     services: ["Content", "UGC", "Campaigns"],
