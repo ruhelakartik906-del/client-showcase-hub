@@ -45,6 +45,22 @@ export function Reels() {
                   loading="lazy"
                   className="h-full w-full object-cover opacity-80 transition-all duration-[900ms] ease-out group-hover:scale-105 group-hover:opacity-100"
                 />
+                {r.video ? (
+                  <video
+                    src={r.video}
+                    muted
+                    loop
+                    playsInline
+                    preload="none"
+                    aria-hidden="true"
+                    onMouseEnter={(e) => void e.currentTarget.play().catch(() => {})}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.pause();
+                      e.currentTarget.currentTime = 0;
+                    }}
+                    className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                  />
+                ) : null}
                 <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/20 to-transparent" />
                 <span className="absolute left-4 top-4 rounded-full border border-brand/35 bg-ink/70 px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.16em] text-brand">
                   {r.category}
@@ -75,8 +91,19 @@ export function Reels() {
             >
               <X className="h-4 w-4" />
             </button>
-            <img src={open.thumb} alt={open.title} className="aspect-9/16 w-full object-cover" />
-            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink to-transparent p-5">
+            {open.video ? (
+              <video
+                src={open.video}
+                poster={open.thumb}
+                controls
+                autoPlay
+                playsInline
+                className="aspect-9/16 w-full bg-ink object-cover"
+              />
+            ) : (
+              <img src={open.thumb} alt={open.title} className="aspect-9/16 w-full object-cover" />
+            )}
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink to-transparent p-5 pb-14">
               <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-brand">
                 {open.category} · {open.duration}
               </p>
