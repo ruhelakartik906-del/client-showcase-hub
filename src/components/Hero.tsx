@@ -1,5 +1,6 @@
 import { ArrowRight, ArrowDown } from "lucide-react";
 import founder from "@/assets/founder.jpg";
+import logo from "@/assets/unknownhat-logo.png.asset.json";
 import { site } from "@/data/site";
 import { MagneticButton } from "./ui-kit/Magnetic";
 import { Reveal } from "./ui-kit/Reveal";
@@ -20,7 +21,16 @@ export function Hero() {
       <div className="relative mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-8">
         <div>
           <Reveal>
-            <SectionLabel>{site.tagline}</SectionLabel>
+            <div className="flex flex-wrap items-center gap-4">
+              <span className="inline-flex items-center rounded-lg border border-white/10 bg-white px-3 py-2 shadow-[0_12px_40px_-18px_var(--brand)]">
+                <img
+                  src={logo.url}
+                  alt="UnknownHat Agency"
+                  className="h-7 w-auto sm:h-8"
+                />
+              </span>
+              <SectionLabel>{site.tagline}</SectionLabel>
+            </div>
           </Reveal>
 
           <Reveal delay={80}>
