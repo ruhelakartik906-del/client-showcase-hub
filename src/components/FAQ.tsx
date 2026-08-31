@@ -8,7 +8,7 @@ export function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section className="relative border-t border-white/8 py-24 lg:py-32">
+    <section id="faq" className="relative border-t border-white/8 py-24 lg:py-32">
       <div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20 lg:px-8">
         <SectionHeading
           label="13 — FAQ"
