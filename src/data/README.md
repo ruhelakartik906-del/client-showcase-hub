@@ -14,7 +14,6 @@ update ho jayegi. Code chhoone ki zaroorat nahi.
 | `process.ts` | Mission steps 01–06 (Discover → Support & Scale) |
 | `testimonials.ts` | Client reviews / quotes |
 | `faqs.ts` | FAQ section ke questions & answers |
-| `reels.ts` | Reels / vertical videos ki thumbnails & links |
 
 ## Common edits
 
