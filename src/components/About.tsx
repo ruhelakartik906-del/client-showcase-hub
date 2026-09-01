@@ -18,7 +18,12 @@ export function About() {
     if (!video) return;
     const tryPlay = () => video.play().catch(() => {});
     const observer = new IntersectionObserver(
-      ([entry]) => (entry.isIntersecting ? tryPlay() : video.pause()),
+      (entries) => {
+        const entry = entries[0];
+        if (!entry) return;
+        if (entry.isIntersecting) tryPlay();
+        else video.pause();
+      },
       { threshold: 0.25 },
     );
     observer.observe(video);
