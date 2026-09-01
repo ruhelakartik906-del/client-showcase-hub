@@ -26,6 +26,7 @@ export type Project = {
   category: Exclude<ProjectCategory, "ALL">;
   image: string;
   imageFit?: "cover" | "contain";
+  url?: string;
   description: string;
   services: string[];
   tech: string[];
