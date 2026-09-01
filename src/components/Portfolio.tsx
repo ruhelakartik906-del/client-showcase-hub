@@ -108,10 +108,28 @@ export function Portfolio() {
                       </span>
                     ))}
                   </div>
-                  <span className="mt-5 inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-brand">
+                  <span
+                    role={p.url ? "link" : undefined}
+                    tabIndex={p.url ? 0 : undefined}
+                    onClick={(e) => {
+                      if (!p.url) return;
+                      e.stopPropagation();
+                      window.open(p.url, "_blank", "noopener,noreferrer");
+                    }}
+                    onKeyDown={(e) => {
+                      if (!p.url) return;
+                      if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        window.open(p.url, "_blank", "noopener,noreferrer");
+                      }
+                    }}
+                    className="mt-5 inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-brand hover:underline"
+                  >
                     View Case Study
                     <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </span>
+
                 </div>
               </button>
             </Reveal>
