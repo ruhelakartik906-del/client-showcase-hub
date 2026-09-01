@@ -39,6 +39,7 @@ export const projects: Project[] = [
     name: "Vastra",
     category: "WEBSITES",
     image: caseVastra.url,
+    url: "https://vastrahometextile.com/",
     description:
       "An e-commerce website for a premium bedding brand — with product collections, a trust section and a clean path from browsing to checkout.",
     services: ["E-commerce website", "UX design", "Performance"],
@@ -50,6 +51,7 @@ export const projects: Project[] = [
     name: "Street9",
     category: "WEBSITES",
     image: caseStreet9.url,
+    url: "https://street9.com/",
     description:
       "A fashion e-commerce website with quick-buy product cards, category discovery and built-in WhatsApp support for shoppers.",
     services: ["Website", "UX", "Conversion"],
@@ -61,6 +63,7 @@ export const projects: Project[] = [
     name: "Do Desk",
     category: "SOFTWARE",
     image: caseDodesk.url,
+    url: "https://www.dailyobjects.com/",
     description:
       "A large-catalogue commerce platform with organised category systems, merchandising blocks and offer management for the team.",
     services: ["Product design", "Web app", "Deployment"],
@@ -72,6 +75,7 @@ export const projects: Project[] = [
     name: "Kirtilals",
     category: "MARKETING",
     image: caseKirtilals.url,
+    url: "https://www.kirtilals.com/",
     description:
       "Digital presence work for a heritage jewellery brand — festive campaigns, website experience improvements and content across channels.",
     services: ["Campaign strategy", "Content", "Growth"],
@@ -83,6 +87,7 @@ export const projects: Project[] = [
     name: "LAL Sweets",
     category: "AI",
     image: caseLal.url,
+    url: "https://www.lalsweets.com/",
     description:
       "A sweets e-commerce website with an AI-assisted enquiry flow that qualifies orders and routes them directly to the team.",
     services: ["AI agent", "Website", "Integrations"],
@@ -94,6 +99,7 @@ export const projects: Project[] = [
     name: "Hocco Ice Cream",
     category: "MARKETING",
     image: caseHocco.url,
+    url: "https://www.hocco.in/",
     description:
       "A brand-led website and campaign system for a fast-growing ice cream brand, built to carry the same playful identity across web and social.",
     services: ["Content", "UGC", "Campaigns"],
@@ -105,6 +111,7 @@ export const projects: Project[] = [
     name: "Xpert Awards",
     category: "WEBSITES",
     image: caseXpert.url,
+    url: "https://xpertawards.com/",
     description:
       "A website for a trophy manufacturer built around quote requests, product range browsing and WhatsApp-first enquiries.",
     services: ["Website", "Lead capture", "SEO"],
@@ -116,6 +123,7 @@ export const projects: Project[] = [
     name: "Infinity Boards",
     category: "WEBSITES",
     image: caseInfinity.url,
+    url: "https://infinityboards.in/",
     description:
       "A website for a wood panel manufacturer — product range, dealer trust proof and direct call/WhatsApp routing for buyers.",
     services: ["Website", "Brand integration", "Lead routing"],
