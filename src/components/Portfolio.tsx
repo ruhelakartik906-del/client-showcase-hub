@@ -173,10 +173,21 @@ function CaseStudy({ project, onClose }: { project: Project; onClose: () => void
             ) : null}
           </div>
 
-          <div className="mt-9">
+          <div className="mt-9 flex flex-wrap items-center gap-5">
             <MagneticButton href="#contact" onClick={onClose}>
               Build something like this
             </MagneticButton>
+            {project.url ? (
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-brand hover:underline"
+              >
+                Visit live website
+                <ArrowUpRight className="h-3.5 w-3.5" />
+              </a>
+            ) : null}
           </div>
         </div>
       </div>
