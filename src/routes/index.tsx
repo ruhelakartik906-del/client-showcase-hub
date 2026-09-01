@@ -12,7 +12,6 @@ import { Clients } from "@/components/Clients";
 import { Portfolio } from "@/components/Portfolio";
 import { Ecosystem } from "@/components/Ecosystem";
 import { AutomationShowcase } from "@/components/AutomationShowcase";
-import { Reels } from "@/components/Reels";
 import { Testimonials } from "@/components/Testimonials";
 import { FAQ } from "@/components/FAQ";
 import { ConsultationForm } from "@/components/ConsultationForm";
@@ -57,7 +56,6 @@ function Home() {
         <Portfolio />
         <Ecosystem />
         <AutomationShowcase />
-        <Reels />
         <Testimonials />
         <Stats />
         <FAQ />
