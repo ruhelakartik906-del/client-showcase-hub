@@ -24,6 +24,8 @@ import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 const title = "UnknownHat Agency — Websites, Automation & AI Systems";
 const description =
   "Founder-led technology studio building websites, software, CRM, automation, WhatsApp and AI systems for businesses that want to scale.";
+const ogImage =
+  "https://project--3681f220-7b0c-49e0-a3c2-d0abc757a350.lovable.app/og-image.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -33,9 +35,18 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: title },
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "/" },
+      { property: "og:image", content: ogImage },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: title },
+      { name: "twitter:description", content: description },
+      { name: "twitter:image", content: ogImage },
     ],
+    links: [{ rel: "canonical", href: "/" }],
   }),
+
   component: Home,
 });
 

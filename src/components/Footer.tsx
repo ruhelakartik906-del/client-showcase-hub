@@ -18,7 +18,7 @@ export function Footer() {
             </p>
           </div>
 
-          <div className="grid gap-6 sm:grid-cols-3 sm:gap-10">
+          <div className="grid gap-6 sm:grid-cols-2 sm:gap-10">
             <div>
               <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-brand">Email</p>
               <a
@@ -38,10 +38,6 @@ export function Footer() {
               >
                 {site.phone}
               </a>
-            </div>
-            <div>
-              <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-brand">Location</p>
-              <p className="mt-1.5 text-sm">{site.location}</p>
             </div>
           </div>
         </div>

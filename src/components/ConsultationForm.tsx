@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from "react";
-import { ArrowRight, Check, Mail, MapPin, Phone } from "lucide-react";
+import { ArrowRight, Check, Loader2, Mail, Phone } from "lucide-react";
 import { site, whatsappLink } from "@/data/site";
 import { services } from "@/data/services";
 import { SectionHeading } from "./ui-kit/SectionHeading";
@@ -32,6 +32,8 @@ export function ConsultationForm() {
   const [values, setValues] = useState<Fields>(empty);
   const [errors, setErrors] = useState<Partial<Record<keyof Fields, string>>>({});
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [failed, setFailed] = useState(false);
 
   const set = (k: keyof Fields, v: string) => {
     setValues((s) => ({ ...s, [k]: v }));
@@ -49,9 +51,37 @@ export function ConsultationForm() {
     return Object.keys(e).length === 0;
   };
 
-  const submit = (ev: FormEvent) => {
+  const submit = async (ev: FormEvent) => {
     ev.preventDefault();
     if (!validate()) return;
+    setSending(true);
+    setFailed(false);
+    try {
+      const res = await fetch(`https://formsubmit.co/ajax/${site.formEmail}`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          _subject: `New website enquiry — ${values.name}`,
+          _template: "table",
+          Name: values.name,
+          Company: values.company || "—",
+          Email: values.email,
+          "Phone / WhatsApp": values.phone,
+          "Service needed": values.need,
+          Budget: values.budget || "—",
+          "Project details": values.message,
+        }),
+      });
+      if (!res.ok) throw new Error("Request failed");
+      setSent(true);
+    } catch {
+      setFailed(true);
+    } finally {
+      setSending(false);
+    }
+  };
+
+  const whatsappFallback = () => {
     const lines = [
       `Hi UnknownHat, I'd like to book a consultation.`,
       ``,
@@ -65,12 +95,7 @@ export function ConsultationForm() {
       `Project details:`,
       values.message,
     ].filter((l): l is string => l !== null);
-    window.open(
-      `https://wa.me/${site.whatsappNumber}?text=${encodeURIComponent(lines.join("\n"))}`,
-      "_blank",
-      "noopener,noreferrer",
-    );
-    setSent(true);
+    return `https://wa.me/${site.whatsappNumber}?text=${encodeURIComponent(lines.join("\n"))}`;
   };
 
   return (
@@ -90,7 +115,6 @@ export function ConsultationForm() {
           <div className="mt-10 space-y-4">
             <ContactRow icon={<Mail className="h-4 w-4" />} label="Email" value={site.email} href={`mailto:${site.email}`} />
             <ContactRow icon={<Phone className="h-4 w-4" />} label="WhatsApp" value={site.phone} href={whatsappLink} />
-            <ContactRow icon={<MapPin className="h-4 w-4" />} label="Location" value={site.location} />
           </div>
         </div>
 
@@ -155,12 +179,34 @@ export function ConsultationForm() {
               </Field>
 
               <div className="sm:col-span-2 flex flex-wrap items-center gap-4">
-                <MagneticButton type="submit">
-                  Book a Consultation <ArrowRight className="h-4 w-4" />
+                <MagneticButton type="submit" disabled={sending}>
+                  {sending ? (
+                    <>
+                      Sending <Loader2 className="h-4 w-4 animate-spin" />
+                    </>
+                  ) : (
+                    <>
+                      Book a Consultation <ArrowRight className="h-4 w-4" />
+                    </>
+                  )}
                 </MagneticButton>
                 <p className="text-xs text-muted-foreground">
                   We'll review your requirement and get back with the next steps.
                 </p>
+                {failed ? (
+                  <p className="sm:col-span-2 text-xs text-destructive">
+                    Couldn't send right now.{" "}
+                    <a
+                      href={whatsappFallback()}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="underline hover:text-brand"
+                    >
+                      Send it on WhatsApp instead
+                    </a>
+                    .
+                  </p>
+                ) : null}
               </div>
             </form>
           )}

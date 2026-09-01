@@ -16,19 +16,17 @@ export const site = {
       "I build digital systems that help businesses move faster, operate smarter and scale.",
   },
   availability: "Available for selected projects",
-  email: "hello@unknownhat.agency",
-  phone: "+91 90000 00000",
-  whatsappNumber: "919000000000",
+  email: "contact@unknownhat.com",
+  // Where the website contact form submissions are delivered
+  formEmail: "unknownhatagency@gmail.com",
+  phone: "+91 63958 55214",
+  whatsappNumber: "916395855214",
   whatsappMessage:
-    "Hi UnknownHat, I'm interested in working with you. I'd like to discuss a project.",
-  location: "India — working worldwide",
+    "Hi UnknownHat 👋 I'm interested in getting a website for my business. I'd like to know more about your services and see some previous work.",
   socials: [
-    { label: "LinkedIn", href: "https://linkedin.com" },
-    { label: "Instagram", href: "https://instagram.com" },
-    { label: "X", href: "https://x.com" },
-    { label: "YouTube", href: "https://youtube.com" },
-    { label: "GitHub", href: "https://github.com" },
+    { label: "Instagram", href: "https://www.instagram.com/unknownhat_agency_/" },
   ],
+
   nav: [
     { label: "Home", href: "#home" },
     { label: "About", href: "#about" },

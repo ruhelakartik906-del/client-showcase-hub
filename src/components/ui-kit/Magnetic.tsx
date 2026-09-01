@@ -10,6 +10,7 @@ type Props = {
   target?: string;
   strength?: number;
   type?: "button" | "submit";
+  disabled?: boolean;
 };
 
 export function MagneticButton({
@@ -21,6 +22,7 @@ export function MagneticButton({
   target,
   strength = 0.25,
   type = "button",
+  disabled = false,
 }: Props) {
   const ref = useRef<HTMLElement | null>(null);
 
@@ -42,6 +44,7 @@ export function MagneticButton({
     variant === "brand"
       ? "bg-brand text-brand-foreground hover:shadow-[0_16px_60px_-16px_var(--brand)]"
       : "border border-white/15 bg-white/[0.03] text-foreground hover:border-brand/60 hover:text-brand",
+    disabled && "pointer-events-none opacity-60",
     className,
   );
 
@@ -65,6 +68,7 @@ export function MagneticButton({
     <button
       ref={ref as never}
       type={type}
+      disabled={disabled}
       onClick={onClick}
       onMouseMove={move}
       onMouseLeave={reset}

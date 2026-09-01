@@ -77,14 +77,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Unknown Hat Agency" },
-      { name: "description", content: "We build, automate & grow digital businesses." },
-      { name: "author", content: "Unknown Hat Agency" },
-      { property: "og:title", content: "Unknown Hat Agency" },
-      { property: "og:description", content: "We build, automate & grow digital businesses." },
+      { title: "UnknownHat Agency — Websites, Automation & AI Systems" },
+      {
+        name: "description",
+        content:
+          "UnknownHat Agency builds websites, software, automation and AI systems that help businesses grow.",
+      },
+      { name: "author", content: "UnknownHat Agency" },
+      { property: "og:site_name", content: "UnknownHat Agency" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+
     ],
     links: [
       {
