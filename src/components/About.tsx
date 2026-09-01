@@ -1,4 +1,4 @@
-import reel3 from "@/assets/reel-3.mp4.asset.json";
+import aboutVideo from "@/assets/more-than-website.mp4.asset.json";
 import { Reveal } from "./ui-kit/Reveal";
 import { SectionLabel } from "./ui-kit/SectionHeading";
 
@@ -14,15 +14,15 @@ export function About() {
     <section className="relative border-t border-white/8 py-24 lg:py-32">
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 lg:grid-cols-2 lg:gap-20 lg:px-8">
         <Reveal>
-          <div className="group relative overflow-hidden rounded-2xl border border-white/12">
+          <div className="group relative overflow-hidden rounded-2xl border border-white/12 bg-ink">
             <video
-              src={reel3.url}
+              src={aboutVideo.url}
               muted
               loop
               playsInline
               autoPlay
               preload="metadata"
-              className="aspect-4/3 w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
+              className="mx-auto aspect-9/16 max-h-[560px] w-auto max-w-full object-contain"
             />
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent" />
             <p className="absolute bottom-5 left-5 font-mono text-[11px] uppercase tracking-[0.22em] text-brand">
