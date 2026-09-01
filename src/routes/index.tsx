@@ -60,7 +60,6 @@ function Home() {
         <FAQ />
         <ConsultationForm />
         <WhatsAppCTA />
-        <FinalCTA />
       </main>
       <Footer />
       <WhatsAppFloat />
