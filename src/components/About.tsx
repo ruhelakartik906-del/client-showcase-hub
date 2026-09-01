@@ -32,6 +32,7 @@ export function About() {
         <Reveal>
           <div className="group relative overflow-hidden rounded-2xl border border-white/12 bg-ink">
             <video
+              ref={videoRef}
               src={aboutVideo.url}
               muted
               loop
