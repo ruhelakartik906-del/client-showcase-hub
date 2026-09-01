@@ -136,11 +136,21 @@ function CaseStudy({ project, onClose }: { project: Project; onClose: () => void
         >
           <X className="h-4 w-4" />
         </button>
-        <img
-          src={project.image}
-          alt={`${project.name} case study cover`}
-          className={projectImageClass(project, true)}
-        />
+        {project.url ? (
+          <a href={project.url} target="_blank" rel="noopener noreferrer" className="block">
+            <img
+              src={project.image}
+              alt={`${project.name} case study cover`}
+              className={projectImageClass(project, true)}
+            />
+          </a>
+        ) : (
+          <img
+            src={project.image}
+            alt={`${project.name} case study cover`}
+            className={projectImageClass(project, true)}
+          />
+        )}
         <div className="p-7 sm:p-10">
           <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-brand">
             {project.category}
@@ -163,10 +173,21 @@ function CaseStudy({ project, onClose }: { project: Project; onClose: () => void
             ) : null}
           </div>
 
-          <div className="mt-9">
+          <div className="mt-9 flex flex-wrap items-center gap-5">
             <MagneticButton href="#contact" onClick={onClose}>
               Build something like this
             </MagneticButton>
+            {project.url ? (
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-brand hover:underline"
+              >
+                Visit live website
+                <ArrowUpRight className="h-3.5 w-3.5" />
+              </a>
+            ) : null}
           </div>
         </div>
       </div>
