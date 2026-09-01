@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import aboutVideo from "@/assets/more-than-website.mp4.asset.json";
 import { Reveal } from "./ui-kit/Reveal";
 import { SectionLabel } from "./ui-kit/SectionHeading";
@@ -10,6 +11,21 @@ const pillars = [
 ];
 
 export function About() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+    const tryPlay = () => video.play().catch(() => {});
+    const observer = new IntersectionObserver(
+      ([entry]) => (entry.isIntersecting ? tryPlay() : video.pause()),
+      { threshold: 0.25 },
+    );
+    observer.observe(video);
+    tryPlay();
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <section className="relative border-t border-white/8 py-24 lg:py-32">
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 lg:grid-cols-2 lg:gap-20 lg:px-8">
