@@ -13,6 +13,13 @@ const pillars = [
 
 export function About() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [muted, setMuted] = useState(true);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+    video.muted = muted;
+  }, [muted]);
 
   useEffect(() => {
     const video = videoRef.current;
