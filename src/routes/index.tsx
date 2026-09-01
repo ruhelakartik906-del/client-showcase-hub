@@ -17,7 +17,6 @@ import { FAQ } from "@/components/FAQ";
 import { ConsultationForm } from "@/components/ConsultationForm";
 import { WhatsAppCTA } from "@/components/WhatsAppCTA";
 import { Stats } from "@/components/Stats";
-import { FinalCTA } from "@/components/FinalCTA";
 import { Footer } from "@/components/Footer";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 
