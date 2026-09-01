@@ -34,7 +34,6 @@ export const site = {
     { label: "About", href: "#about" },
     { label: "Services", href: "#services" },
     { label: "Work", href: "#work" },
-    { label: "Reels", href: "#reels" },
     { label: "Process", href: "#process" },
     { label: "Contact", href: "#contact" },
   ],

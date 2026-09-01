@@ -1,5 +1,4 @@
-import { Play } from "lucide-react";
-import work3 from "@/assets/work-3.jpg";
+import reel3 from "@/assets/reel-3.mp4.asset.json";
 import { Reveal } from "./ui-kit/Reveal";
 import { SectionLabel } from "./ui-kit/SectionHeading";
 
@@ -16,20 +15,18 @@ export function About() {
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 lg:grid-cols-2 lg:gap-20 lg:px-8">
         <Reveal>
           <div className="group relative overflow-hidden rounded-2xl border border-white/12">
-            <img
-              src={work3}
-              alt="Behind the build at UnknownHat Agency"
-              loading="lazy"
-              className="aspect-4/3 w-full object-cover opacity-70 transition-transform duration-[1200ms] ease-out group-hover:scale-105"
+            <video
+              src={reel3.url}
+              muted
+              loop
+              playsInline
+              autoPlay
+              preload="metadata"
+              className="aspect-4/3 w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent" />
-            <a href="#reels" aria-label="Watch the UnknownHat story reels" className="absolute inset-0 flex items-center justify-center">
-              <span className="glow-brand flex h-20 w-20 items-center justify-center rounded-full bg-brand text-brand-foreground transition-transform duration-500 group-hover:scale-110">
-                <Play className="ml-1 h-6 w-6 fill-current" />
-              </span>
-            </a>
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-ink/30 to-transparent" />
             <p className="absolute bottom-5 left-5 font-mono text-[11px] uppercase tracking-[0.22em] text-brand">
-              Watch the UnknownHat Story
+              Behind the build
             </p>
           </div>
         </Reveal>
