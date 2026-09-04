@@ -30,12 +30,13 @@ export function ScrollProgress() {
 
   return (
     <>
-      <div className="fixed inset-x-0 top-0 z-[60] h-0.5 bg-transparent">
+      <div className="pointer-events-none fixed inset-x-0 top-0 z-[60] h-0.5 bg-transparent">
         <div
           className="h-full bg-brand shadow-[0_0_18px_var(--brand)] transition-[width] duration-150 ease-out"
-          style={{ width: `${progress}%` }}
+          style={{ width: `${progress}%`, visibility: progress <= 0.05 ? "hidden" : "visible" }}
         />
       </div>
+
 
       <button
         type="button"
