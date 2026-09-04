@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X, ArrowRight } from "lucide-react";
-import logo from "@/assets/unknownhat-logo-v3.png.asset.json";
+import logo from "@/assets/unknownhat-logo-v3.png";
 import { site } from "@/data/site";
 import { cn } from "@/lib/utils";
 
@@ -49,7 +49,7 @@ export function Navbar() {
       >
         <a href="#home" className="flex items-center gap-3 transition-transform duration-300 hover:scale-[1.03]">
           <img
-            src={logo.url}
+            src={logo}
             alt="UnknownHat Agency logo"
             className={cn(
               "w-auto transition-all duration-500 [filter:invert(1)_hue-rotate(180deg)_saturate(1.5)_brightness(1.15)_drop-shadow(0_0_14px_rgba(255,255,255,0.25))]",
