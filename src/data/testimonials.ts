@@ -1,7 +1,7 @@
-import hocco from "@/assets/hocco.png.asset.json";
-import stoa from "@/assets/stoa.avif.asset.json";
-import bedsheets from "@/assets/bedsheets.webp.asset.json";
-import vastra from "@/assets/vastra.webp.asset.json";
+import hocco from "@/assets/hocco.png";
+import stoa from "@/assets/stoa.avif";
+import bedsheets from "@/assets/bedsheets.webp";
+import vastra from "@/assets/vastra.webp";
 
 export type Testimonial = {
   quote: string;

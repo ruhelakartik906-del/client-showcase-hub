@@ -1,11 +1,11 @@
-import caseHocco from "@/assets/case-hocco.png.asset.json";
-import caseVastra from "@/assets/case-vastra.png.asset.json";
-import caseDodesk from "@/assets/case-dodesk.png.asset.json";
-import caseStreet9 from "@/assets/case-street9.png.asset.json";
-import caseKirtilals from "@/assets/case-kirtilals.png.asset.json";
-import caseLal from "@/assets/case-lal.png.asset.json";
-import caseXpert from "@/assets/case-xpert.png.asset.json";
-import caseInfinity from "@/assets/case-infinity.png.asset.json";
+import caseHocco from "@/assets/case-hocco.png";
+import caseVastra from "@/assets/case-vastra.png";
+import caseDodesk from "@/assets/case-dodesk.png";
+import caseStreet9 from "@/assets/case-street9.png";
+import caseKirtilals from "@/assets/case-kirtilals.png";
+import caseLal from "@/assets/case-lal.png";
+import caseXpert from "@/assets/case-xpert.png";
+import caseInfinity from "@/assets/case-infinity.png";
 
 export const projectCategories = [
   "ALL",

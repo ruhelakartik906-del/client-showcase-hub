@@ -1,5 +1,5 @@
 import { ArrowRight, ArrowDown } from "lucide-react";
-import founderAsset from "@/assets/founder-new.png.asset.json";
+import founderAsset from "@/assets/founder-new.png";
 import { site } from "@/data/site";
 import { MagneticButton } from "./ui-kit/Magnetic";
 import { Reveal } from "./ui-kit/Reveal";

@@ -1,4 +1,4 @@
-import logo from "@/assets/unknownhat-logo-v3.png.asset.json";
+import logo from "@/assets/unknownhat-logo-v3.png";
 import { site, whatsappLink } from "@/data/site";
 
 export function Footer() {

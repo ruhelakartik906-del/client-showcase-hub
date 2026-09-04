@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import aboutVideo from "@/assets/more-than-website.mp4.asset.json";
+import aboutVideo from "@/assets/more-than-website.mp4";
 import { Volume2, VolumeX } from "lucide-react";
 import { Reveal } from "./ui-kit/Reveal";
 import { SectionLabel } from "./ui-kit/SectionHeading";

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X, ArrowRight } from "lucide-react";
-import logo from "@/assets/unknownhat-logo-v3.png.asset.json";
+import logo from "@/assets/unknownhat-logo-v3.png";
 import { site } from "@/data/site";
 import { cn } from "@/lib/utils";
 
