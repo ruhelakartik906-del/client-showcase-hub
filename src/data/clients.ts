@@ -11,12 +11,12 @@ import lal from "@/assets/lal.avif";
 export type Client = { name: string; logo: string; url?: string };
 
 export const clients: Client[] = [
-  { name: "Hocco Ice Cream", logo: hocco.url, url: "https://www.hocco.in" },
-  { name: "Stoa", logo: stoa.url, url: "https://www.stoa.school" },
-  { name: "Bedsheets India", logo: bedsheets.url },
-  { name: "Vastra", logo: vastra.url },
-  { name: "Do Desk", logo: dodesk.url },
-  { name: "Street9", logo: street9.url },
-  { name: "Kirtilals", logo: kk.url, url: "https://www.kirtilals.com" },
-  { name: "LAL", logo: lal.url },
+  { name: "Hocco Ice Cream", logo: hocco, url: "https://www.hocco.in" },
+  { name: "Stoa", logo: stoa, url: "https://www.stoa.school" },
+  { name: "Bedsheets India", logo: bedsheets },
+  { name: "Vastra", logo: vastra },
+  { name: "Do Desk", logo: dodesk },
+  { name: "Street9", logo: street9 },
+  { name: "Kirtilals", logo: kk, url: "https://www.kirtilals.com" },
+  { name: "LAL", logo: lal },
 ];

@@ -95,7 +95,7 @@ function FounderVisual() {
 
       <div className="relative overflow-hidden rounded-2xl border border-white/12 bg-card">
         <img
-          src={founderAsset.url}
+          src={founderAsset}
           alt="Nitin Raghav, Founder and Technology Lead at UnknownHat Agency"
           className="aspect-4/5 w-full object-cover grayscale-[0.25] transition-all duration-700 hover:grayscale-0"
           loading="eager"

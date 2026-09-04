@@ -18,7 +18,7 @@ export const testimonials: Testimonial[] = [
     name: "Operations Lead",
     role: "Operations",
     company: "Bedsheets India",
-    logo: bedsheets.url,
+    logo: bedsheets,
   },
   {
     quote:
@@ -26,7 +26,7 @@ export const testimonials: Testimonial[] = [
     name: "Sales Head",
     role: "Sales",
     company: "Stoa",
-    logo: stoa.url,
+    logo: stoa,
   },
   {
     quote:
@@ -34,7 +34,7 @@ export const testimonials: Testimonial[] = [
     name: "Marketing Manager",
     role: "Marketing",
     company: "Hocco",
-    logo: hocco.url,
+    logo: hocco,
   },
   {
     quote:
@@ -42,6 +42,6 @@ export const testimonials: Testimonial[] = [
     name: "Founder",
     role: "Founder",
     company: "Vastra",
-    logo: vastra.url,
+    logo: vastra,
   },
 ];

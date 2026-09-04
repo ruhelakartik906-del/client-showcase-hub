@@ -8,7 +8,7 @@ export function Footer() {
         <div className="flex flex-wrap items-start justify-between gap-8">
           <div>
             <img
-              src={logo.url}
+              src={logo}
               alt="UnknownHat Agency logo"
               className="h-10 w-auto [filter:invert(1)_hue-rotate(180deg)_saturate(1.5)_brightness(1.15)_drop-shadow(0_0_14px_rgba(255,255,255,0.25))]"
               loading="lazy"
